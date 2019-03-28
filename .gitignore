@@ -1,0 +1,13 @@
+# GENERATED FILES
+.DS_Store
+.vs
+
+# NODE
+node_modules
+npm-debug.log
+yarn-error.log
+
+# PROJECT
+dist
+data/*
+!data/data.json

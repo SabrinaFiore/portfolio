@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Frontend Portfolio development using Gulp, Twig and SCSS",
+  "main": "index.js",
+  "author": "Sabrina Fiore",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twig",
+    "gulp",
+    "HTML",
+    "frontend",
+    "SCSS"
+  ],
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-twig": "^1.2.0",
+    "gulp-watch": "5.0.1"
+  }
+}
