@@ -4,7 +4,6 @@
 /dist
 /tmp
 /out-tsc
-/environments
 # Only exists if Bazel was run
 /bazel-out
 
@@ -59,3 +58,9 @@ yarn-error.log
 dist
 data/*
 !data/data.json
+angular.json
+browserslist
+package-lock.json
+package.json
+tsconfig.spec.json
+tslint.json
