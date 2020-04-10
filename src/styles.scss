@@ -1,10 +1,15 @@
-/* Base */
-@import '../src/assets/scss/base/reset';
-@import '../src/assets/scss/base/typography';
-
 /* Settings */
 @import '../src/assets/scss/settings/media-queries';
 @import '../src/assets/scss/settings/media-queries-mixin';
+@import '../src/assets/scss/settings/unit';
+@import '../src/assets/scss/settings/spacing';
+
+/* Base */
+@import '../src/assets/scss/base/reset';
+@import '../src/assets/scss/base/typography';
+@import '../src/assets/scss/base/border';
+@import '../src/assets/scss/base/color';
 
 /* Components */
 @import '../src/assets/scss/components/header';
+@import '../src/assets/scss/components/main';
