@@ -1,0 +1,6 @@
+.header {
+    height: 200px;
+    background-color: rgb(66, 66, 66);
+
+    @include breakpoints(break-xx-small) { background-color: red ;}
+}

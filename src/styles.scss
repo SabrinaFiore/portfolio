@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/* Base */
+@import '../src/assets/scss/base/reset';
+@import '../src/assets/scss/base/typography';
+
+/* Settings */
+@import '../src/assets/scss/settings/media-queries';
+@import '../src/assets/scss/settings/media-queries-mixin';
+
+/* Components */
+@import '../src/assets/scss/components/header';
