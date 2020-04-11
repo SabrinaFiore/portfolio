@@ -7,8 +7,11 @@
 /* Base */
 @import '../src/assets/scss/base/reset';
 @import '../src/assets/scss/base/typography';
-@import '../src/assets/scss/base/border';
 @import '../src/assets/scss/base/color';
+@import '../src/assets/scss/base/border';
+
+/* Layout */
+@import '../src/assets/scss/layout/layout';
 
 /* Components */
 @import '../src/assets/scss/components/header';

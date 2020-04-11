@@ -1,6 +1,13 @@
+/* Header */
+
 .header {
-    height: 200px;
     background-color: rgb(66, 66, 66);
+    padding: $unit-spacing 0;
+    font-family: $typography-primary-regular;
 
     @include breakpoints(break-xx-small) { background-color: red ;}
+}
+
+.hola {
+    font-family: $typography-body-regular;
 }
