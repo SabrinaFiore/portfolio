@@ -1,17 +1,17 @@
 /* Settings */
-@import '../src/assets/scss/settings/media-queries';
-@import '../src/assets/scss/settings/media-queries-mixin';
-@import '../src/assets/scss/settings/unit';
-@import '../src/assets/scss/settings/spacing';
+@import '../src/assets/scss/tools/media-queries';
+@import '../src/assets/scss/tools/media-queries-mixin';
+@import '../src/assets/scss/tools/unit';
+@import '../src/assets/scss/tools/spacing';
 
 /* Base */
-@import '../src/assets/scss/base/reset';
-@import '../src/assets/scss/base/typography';
-@import '../src/assets/scss/base/color';
-@import '../src/assets/scss/base/border';
+@import '../src/assets/scss/settings/reset';
+@import '../src/assets/scss/settings/typography';
+@import '../src/assets/scss/settings/color';
+@import '../src/assets/scss/settings/border';
 
 /* Layout */
-@import '../src/assets/scss/layout/layout';
+@import '../src/assets/scss/elements/layout';
 
 /* Components */
 @import '../src/assets/scss/components/header';
