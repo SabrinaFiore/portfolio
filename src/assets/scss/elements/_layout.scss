@@ -2,11 +2,11 @@
 
 .layout {
     width: 100%;
-    max-width: $s1024;
+    // max-width: $s1024;
     margin: 0 auto;
     border: $border-size;
     border-image-slice: $image-slice;
     border-width: $border-width;
-    border-image-source: $border-base-cyan;
+    // border-image-source: $border-base-cyan;
     background-color: $c-dark-gray;
 }

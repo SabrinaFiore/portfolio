@@ -20,7 +20,7 @@ const routes: Routes = [
     component: MapsComponent,
     data: { title: 'Team Position' }
   },
-  { path: '',
+  { path: 'header',
     redirectTo: '/list',
     pathMatch: 'full'
   }
