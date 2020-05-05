@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,8 +9,7 @@ import { MainComponent } from './components/main/main.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ListComponent } from './components/list/list.component'; // home
-import { DetailsComponent } from './components/details/details.component'; // works
+import { ViewWorkComponent } from './views/view-work/view-work.component'; // works
 import { MapsComponent } from './components/maps/maps.component';  // photos
 
 import { ViewHomeComponent } from './views/view-home/view-home.component';
@@ -22,6 +22,7 @@ import { MatInputModule,
   MatButtonModule,
   MatCardModule,
   MatGridListModule } from '@angular/material';
+import { ViewPhotoComponent } from './views/view-photo/view-photo.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +30,13 @@ import { MatInputModule,
     HeaderComponent,
     MainComponent,
     LayoutComponent,
-    ListComponent,
-    DetailsComponent,
     MapsComponent,
     ViewHomeComponent,
+    ViewWorkComponent,
+    ViewPhotoComponent,
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

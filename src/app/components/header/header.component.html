@@ -1,5 +1,15 @@
-<div class="header">
-    <p>header works!</p>
-    <p class="hola">header works!</p>
-    <ng-content></ng-content>
-</div>
+<section class="header">
+    <nav *ngFor="let link of link">
+        <a [routerLink]="['/view-home']">{{ link.name }}</a>
+        <a [routerLink]="['/view-work']">{{ link.name }}</a>
+        <a [routerLink]="['/view-photo']">{{ link.name }}</a>
+    </nav>
+
+    <!-- <nav *ngFor="let link of link">
+        <a [routerLink]=[viewRoute.id]>{{ link.name }}</a>
+    </nav> -->
+
+    <!-- <ng-template ngFor let-link [ngForOf]="link" let-i="index">
+        <a [routerLink]="[/path]">{{ link.name }}</a>
+    </ng-template> -->
+</section>

@@ -1,33 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from './components/list/list.component';
-import { DetailsComponent } from './components/details/details.component';
-import { MapsComponent } from './components/maps/maps.component';
 
-const routes: Routes = [
+import { ViewWorkComponent } from './views/view-work/view-work.component';
+import { ViewPhotoComponent } from './views/view-photo/view-photo.component';
+import { ViewHomeComponent } from './views/view-home/view-home.component';
+
+export const AppRoutes: Routes = [
   {
-    path: 'list',  // home
-    component: ListComponent,
-    data: { title: 'List of Teams' }
+    path: 'view-home',
+    component: ViewHomeComponent
   },
   {
-    path: 'details/:id',  // work
-    component: DetailsComponent,
-    data: { title: 'Team Details' }
+    path: 'view-work',
+    component: ViewWorkComponent
   },
-  {
-    path: 'maps/:lat/:lng',   // photos
-    component: MapsComponent,
-    data: { title: 'Team Position' }
-  },
-  // { path: '',
-  //   redirectTo: '/list',
-  //   pathMatch: 'full'
-  // }
+  { path: 'view-photo',
+    component: ViewPhotoComponent
+  }
 ];
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(AppRoutes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
