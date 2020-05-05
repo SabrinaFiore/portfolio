@@ -8,15 +8,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   viewRoute = [
-    { id: 1, path: './view-home'},
-    { id: 2, path: './view-work'},
+    { id: 1, path: './view-home' },
+    { id: 2, path: './view-work' },
     { id: 3, path: './view-photo'},
   ];
 
-  link = [
-    { id: 1, name: 'home' },
-    { id: 2, name: 'work' },
-    { id: 3, name: 'photo' }
+  links = [
+    { id: 1, name: 'home', path: './../../views/view-home/view-home.component.html' },
+    { id: 2, name: 'work', path: './view-work' },
+    { id: 3, name: 'photo', path: './view-photo' }
   ];
   ngOnInit() {
   }
