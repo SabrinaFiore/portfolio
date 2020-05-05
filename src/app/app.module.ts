@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { LayoutComponent } from './components/layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ListComponent } from './list/list.component'; // home
-import { DetailsComponent } from './details/details.component'; // works
-import { MapsComponent } from './maps/maps.component';  // photos
+import { ListComponent } from './components/list/list.component'; // home
+import { DetailsComponent } from './components/details/details.component'; // works
+import { MapsComponent } from './components/maps/maps.component';  // photos
+
+import { ViewHomeComponent } from './views/view-home/view-home.component';
 
 import { MatInputModule,
   MatPaginatorModule,
@@ -30,6 +32,7 @@ import { MatInputModule,
     ListComponent,
     DetailsComponent,
     MapsComponent,
+    ViewHomeComponent,
   ],
   imports: [
     BrowserModule,

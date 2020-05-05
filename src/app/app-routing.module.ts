@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from './list/list.component';
-import { DetailsComponent } from './details/details.component';
-import { MapsComponent } from './maps/maps.component';
+import { ListComponent } from './components/list/list.component';
+import { DetailsComponent } from './components/details/details.component';
+import { MapsComponent } from './components/maps/maps.component';
 
 const routes: Routes = [
   {
@@ -20,10 +20,10 @@ const routes: Routes = [
     component: MapsComponent,
     data: { title: 'Team Position' }
   },
-  { path: 'header',
-    redirectTo: '/list',
-    pathMatch: 'full'
-  }
+  // { path: '',
+  //   redirectTo: '/list',
+  //   pathMatch: 'full'
+  // }
 ];
 
 @NgModule({
