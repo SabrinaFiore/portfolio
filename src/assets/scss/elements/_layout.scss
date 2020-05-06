@@ -9,3 +9,9 @@
     border-width: $border-width;
     background-color: $c-dark-gray;
 }
+
+.container {
+    max-width: $container--max-width;
+    width: 100%;
+    margin: 0 auto;
+}

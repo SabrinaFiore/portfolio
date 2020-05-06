@@ -1,17 +1,41 @@
 /* Header */
 
 .header {
-    background-color: rgb(66, 66, 66);
-    padding: $unit-spacing 0;
-    font-family: $typography-primary-regular;
+    background-color: $c-dark-gray;
+    padding: $unit-spacing--2 0;
 
     @include breakpoints(break-xx-small) { background-color: red ;}
-}
+    
+    &__box {
+        align-items: center;
+        display: flex;
+        font-family: $typography-primary-regular;
+        justify-content: space-between;
+        max-width: $s960;
+    }
 
-.hola {
-    font-family: $typography-body-regular;
-}
+    &__logo {
+        align-items: center;
+        display: flex;
 
-.example-card {
-    width: 200px;
+        &--naming {
+            color: $c-white;
+            font-family: $typography-primary-regular;
+            font-weight: lighter;
+            font-size: $unit-spacing;
+            line-height: 22px;
+            padding-left: $unit-spacing--2;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__items {
+        color: $c-white;
+        font-family: $typography-body-regular;
+        font-size: $unit-spacing--1;
+        padding-left: $unit-spacing;
+    }
 }

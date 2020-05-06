@@ -29,8 +29,8 @@ $portfolio-angular-theme: mat-light-theme($portfolio-angular-primary, $portfolio
 /* Settings */
 @import '../src/assets/scss/tools/media-queries';
 @import '../src/assets/scss/tools/media-queries-mixin';
+@import '../src/assets/scss/tools/setting-variables';
 @import '../src/assets/scss/tools/unit';
-@import '../src/assets/scss/tools/spacing';
 
 /* Base */
 @import '../src/assets/scss/settings/reset';
@@ -44,5 +44,4 @@ $portfolio-angular-theme: mat-light-theme($portfolio-angular-primary, $portfolio
 /* Components */
 @import '../src/assets/scss/components/header';
 @import '../src/assets/scss/components/main';
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

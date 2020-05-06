@@ -1,19 +1,17 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
 })
+
 export class HeaderComponent implements OnInit {
 
   links = [
-    { id: 1, name: 'home', path: './view-home' },
     { id: 2, name: 'work', path: './view-work' },
     { id: 3, name: 'photo', path: './view-photo' }
   ];
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 }
-
