@@ -1,0 +1,32 @@
+.scroll-down {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    right: 0;
+
+    &--content {
+        text-align: center;
+    }
+
+    &--text {
+        @include scroll-down;
+    }
+
+    &--icon {
+        color: $c-white;
+        width: 10px;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+}
+
+.icon-keyboard_arrow_down:before {
+    content: "";
+}

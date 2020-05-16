@@ -36,12 +36,13 @@ $portfolio-angular-theme: mat-light-theme($portfolio-angular-primary, $portfolio
 @import '../src/assets/scss/settings/reset';
 @import '../src/assets/scss/settings/typography';
 @import '../src/assets/scss/settings/color';
-@import '../src/assets/scss/settings/border';
 
-/* Layout */
+/* Elements */
+@import '../src/assets/scss/elements/border';
 @import '../src/assets/scss/elements/layout';
+@import '../src/assets/scss/elements/headings';
 
 /* Components */
 @import '../src/assets/scss/components/header';
 @import '../src/assets/scss/components/main';
-
+@import '../src/assets/scss/components/scroll-down';

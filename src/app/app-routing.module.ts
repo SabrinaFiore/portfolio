@@ -7,8 +7,9 @@ import { ViewHomeComponent } from './views/view-home/view-home.component';
 
 export const AppRoutes: Routes = [
   {
-    path: 'view-home',
-    component: ViewHomeComponent
+    path: '',
+    component: ViewHomeComponent,
+    // data: colomarco: rojo
   },
   {
     path: 'view-work',

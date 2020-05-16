@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  claim: string =  'Welcome to my webpage. I\'m Sabrina, a front-end developer and UX/UI designer.';
+
   constructor() { }
 
   ngOnInit() {

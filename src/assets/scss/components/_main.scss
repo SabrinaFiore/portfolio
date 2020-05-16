@@ -1,5 +1,32 @@
 /* Main */
 
 .main {
-    height: 200px;
+    background-color: $c-dark-gray;
+    
+    &__content {
+        align-items: center;
+        display: flex;
+        height: calc(100vh - 3rem);
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    &__information {
+        left: 6%;
+        position: absolute;
+        max-width: $s480;
+        width: 100%;
+        z-index: 1;
+
+        @include h1-playfair;
+    }
+
+    &__photo {
+        height: auto;
+        max-width: $s640;
+        margin-right: calc(100% - $l-container-max-width--small);
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
 }

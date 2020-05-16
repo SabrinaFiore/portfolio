@@ -10,8 +10,14 @@
     background-color: $c-dark-gray;
 }
 
-.container {
-    max-width: $container--max-width;
+.l-container {
+    max-width: $l-container-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--small {
+    max-width: $l-container-max-width--small;
     width: 100%;
     margin: 0 auto;
 }

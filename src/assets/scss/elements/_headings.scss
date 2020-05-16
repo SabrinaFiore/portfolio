@@ -1,0 +1,29 @@
+$base-heading: (
+    // H1-playfair
+    h1-playfair: (
+        family-font: ('Playfair Display', serif),
+        font-weigh: 400,
+        font-size: 38
+    ),
+    // H1-relaway
+    h1-relaway: (
+        family-font: ('Raleway', sans-serif),
+        font-weigh: 400,
+        font-size: 48
+    )
+);
+
+
+@mixin h1-playfair {
+    color: $c-white;
+    font-family: $typography-primary-regular;
+    font-size: 38px;
+    line-height: 51px;
+}
+
+@mixin scroll-down {
+    color: $c-white;
+    font-family: $typography-body-regular;
+    font-size: 14px;
+    line-height: 19px;
+}
