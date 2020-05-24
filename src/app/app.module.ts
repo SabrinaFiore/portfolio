@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { LayoutComponent } from './components/layout/layout.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularSvgIconModule, SvgIconComponent } from 'angular-svg-icon';
 
 import { ViewWorkComponent } from './views/view-work/view-work.component';
 import { ViewHomeComponent } from './views/view-home/view-home.component';
 import { ViewPhotoComponent } from './views/view-photo/view-photo.component';
-import { ScrollComponent } from './scroll/scroll.component';
+import { ScrollComponent } from './components/scroll/scroll.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,14 @@ import { ScrollComponent } from './scroll/scroll.component';
     ViewWorkComponent,
     ViewPhotoComponent,
     ScrollComponent,
+    SvgIconComponent
   ],
   imports: [
     RouterModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    AngularSvgIconModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
