@@ -1,0 +1,29 @@
+/* Card-section */
+
+.card--section {
+    height: calc(100vh - 3rem);
+    background-color: $c-dark-gray;
+
+    &--title {
+        color: $c-white;
+    }
+}
+
+/* Card-l */
+
+.card-l {
+    background-color: $c-dark-gray;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
+    padding: $unit-spacing*2 0;
+    text-align: center;
+
+    &--number {
+        display: flex;
+        align-items: end;
+    }
+
+    &--company-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

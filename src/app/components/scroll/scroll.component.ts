@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-scroll',
   templateUrl: './scroll.component.html',
 })
+
 export class ScrollComponent implements OnInit {
 
   constructor() { }

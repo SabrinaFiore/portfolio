@@ -1,0 +1,22 @@
+/* About me */
+
+.about-me {
+    background-color: $c-dark-gray;
+
+    &__content {
+        align-items: center;
+        display: flex;
+        height: calc(100vh - 3rem);
+    }
+
+    &__title {
+        color: $c-white;
+        margin-bottom: $unit-spacing * 4;
+    }
+    
+    &__paragraph {
+        color: $c-white;
+        line-height: 50px;
+        margin-bottom: $unit-spacing * 4;
+    }
+}

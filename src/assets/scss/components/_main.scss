@@ -9,16 +9,26 @@
         height: calc(100vh - 3rem);
         justify-content: space-between;
         position: relative;
+
+        @include breakpoints(break-x-small) { 
+            align-items: unset;
+        }
     }
     
     &__information {
+        color: $c-white;
         left: 6%;
         position: absolute;
+        padding: 0 $unit-spacing;
         max-width: $s480;
         width: 100%;
         z-index: 1;
 
-        @include h1-playfair;
+        @include breakpoints(break-x-small) { 
+            position: unset;
+            font-size: 50px;
+            line-height: 65px;
+        }
     }
 
     &__photo {
@@ -26,6 +36,7 @@
         max-width: $s640;
         margin-right: calc(100% - $l-container-max-width--small);
         position: absolute;
+        opacity: 0.5;
         right: 0;
         width: 100%;
     }

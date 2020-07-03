@@ -1,29 +1,42 @@
-$base-heading: (
-    // H1-playfair
-    h1-playfair: (
-        family-font: ('Playfair Display', serif),
-        font-weigh: 400,
-        font-size: 38
-    ),
-    // H1-relaway
-    h1-relaway: (
-        family-font: ('Raleway', sans-serif),
-        font-weigh: 400,
-        font-size: 48
-    )
-);
+/* Typography custom properties */
 
+:root {
+    --font-size: 1rem; /* 16px */
+    --ratio: 1.333;
 
-@mixin h1-playfair {
-    color: $c-white;
-    font-family: $typography-primary-regular;
-    font-size: 38px;
-    line-height: 51px;
+    /* Calculate values */
+
+    --h4: calc(var(--font-size) * var(--ratio));
+    --h3: calc(var(--h4) * var(--ratio));
+    --h2: calc(var(--h3) * var(--ratio));
+    --h1: calc(var(--h2) * var(--ratio));
 }
 
-@mixin scroll-down {
-    color: $c-white;
+/* Set typoghraphy class */
+
+.pharagraph {
+    font-size: var(--font-size);
     font-family: $typography-body-regular;
-    font-size: 14px;
-    line-height: 19px;
+}
+
+.link {
+    font-size: var(--font-size);
+    font-family: $typography-body-regular;
+}
+  
+.h4 {
+    font-size: var(--h4);
+}
+  
+.h3 {
+    font-size: var(--h3);
+}
+  
+.h2 {
+    font-size: var(--h2);
+}
+  
+.h1 {
+    font-size: var(--h1);
+    font-family: $typography-primary-regular;
 }

@@ -1,0 +1,16 @@
+<ng-template ngFor let-item [ngForOf]="items" let-i="index">
+    <div class="card-l">
+        <div class="l-container">
+            <app-form-layout [columns]="3">
+                <div class="card-l--number">{{ item.number }}</div>
+                <div class="card-l--role">{{ item.role }}</div>
+                <div class="card-l--company-container">
+                    <div class="card-l--company-info">
+                        <div class="card-l--company-name">{{ item.agency }}</div>
+                        <div class="card-l--employment-date">{{ item.years }}</div>
+                    </div>
+                </div>
+            </app-form-layout>
+        </div>
+    </div>
+</ng-template>
