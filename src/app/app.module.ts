@@ -19,6 +19,7 @@ import { AboutMeComponent } from './components/sections/about-me/about-me.compon
 import { MainComponent } from './components/sections/main/main.component';
 import { WorkExperienceComponent } from './components/sections/work-experience/work-experience.component';
 import { FormLayoutComponent } from './components/form-layout/form-layout.component';
+import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FormLayoutComponent } from './components/form-layout/form-layout.compon
     cardLComponent,
     WorkExperienceComponent,
     FormLayoutComponent,
+    PhotoGalleryComponent,
   ],
   imports: [
     RouterModule,
