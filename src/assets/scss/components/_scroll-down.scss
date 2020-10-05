@@ -1,3 +1,5 @@
+/*Scroll-down*/
+
 .scroll-down {
     bottom: 0;
     display: flex;
@@ -12,7 +14,7 @@
     }
 
     &--text {
-        color: $c-white;
+        color: $c-dark-gray;
     }
 }
 
@@ -22,5 +24,5 @@
     height: 1em;
     stroke-width: 0;
     stroke: currentColor;
-    fill: $c-white;
+    fill: $c-dark-gray;
 }

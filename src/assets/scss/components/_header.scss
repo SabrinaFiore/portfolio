@@ -1,7 +1,7 @@
 /* Header */
 
 .header {
-    background-color: $c-dark-gray;
+    background-color: $c-cream;
     padding: $unit-spacing--2 0;
     box-shadow: 0px 1px 2px $c-black;
 
@@ -39,7 +39,7 @@
         }
 
         &--naming {
-            color: $c-white;
+            color: $c-dark-gray;
             font-family: $typography-primary-regular;
             font-weight: lighter;
             font-size: $unit-spacing;
@@ -50,11 +50,15 @@
                 display: none;
             }
         }
+
+        & img {
+            width: 50px;
+        }
     }
 
     &__items {
-        color: $c-white;
-        font-family: $typography-body-regular;
+        color: $c-dark-gray;
+        font-family: $typography-secondary-regular;
         font-size: $unit-spacing--1;
         padding-left: $unit-spacing;
     }

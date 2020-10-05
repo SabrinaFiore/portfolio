@@ -1,43 +1,28 @@
 /* Main */
 
-.main {
-    background-color: $c-dark-gray;
-    
-    &__content {
-        align-items: center;
-        display: flex;
-        height: calc(100vh - 3rem);
-        justify-content: space-between;
-        position: relative;
-
-        @include breakpoints(break-x-small) { 
-            align-items: unset;
-        }
-    }
-    
-    &__information {
-        color: $c-white;
-        left: 6%;
-        position: absolute;
-        padding: 0 $unit-spacing;
-        max-width: $s480;
-        width: 100%;
-        z-index: 1;
-
-        @include breakpoints(break-x-small) { 
-            position: unset;
-            font-size: 50px;
-            line-height: 65px;
-        }
-    }
+.main {  
+    position: relative;
+    background-color: $c-cream;
 
     &__photo {
-        height: auto;
-        max-width: $s640;
-        margin-right: calc(100% - $l-container-max-width--small);
-        position: absolute;
-        opacity: 0.5;
-        right: 0;
         width: 100%;
+        max-width: 2048px;
+        object-fit: cover;
+        height: calc(100vh - 3rem);
+        opacity: 0.7;
+    }
+
+    &__information {
+        position: absolute;
+        color: $c-dark-gray;
+        padding: $unit-spacing;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: $s480;
+        width: 100%;
+
+        @include breakpoints(break-x-small) { 
+            font-size: var(--h3);
+        }
     }
 }
