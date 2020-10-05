@@ -8,8 +8,8 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   links = [
-    { id: 2, name: 'work', path: './view-work' },
-    { id: 3, name: 'photo', path: './view-photo' }
+    { id: 2, name: 'Work', path: './view-work' },
+    { id: 3, name: 'Photo', path: './view-photo' }
   ];
 
   ngOnInit() { }

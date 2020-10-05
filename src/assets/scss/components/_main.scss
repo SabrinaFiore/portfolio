@@ -2,7 +2,7 @@
 
 .main {  
     position: relative;
-    background-color: $c-cream;
+    background-color: $c-white-darker;
 
     &__photo {
         width: 100%;
@@ -15,7 +15,7 @@
     &__information {
         position: absolute;
         color: $c-dark-gray;
-        padding: $unit-spacing;
+        padding: $unit-spacing $unit-spacing $unit-spacing $unit-spacing*3;
         top: 50%;
         transform: translateY(-50%);
         max-width: $s480;

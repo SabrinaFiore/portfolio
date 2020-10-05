@@ -1,7 +1,7 @@
 /* About me */
 
 .about-me {
-    background-color: $c-dark-gray;
+    background-color: $c-white-darker;
 
     &__content {
         align-items: center;
@@ -10,12 +10,12 @@
     }
 
     &__title {
-        color: $c-white;
+        color: $c-dark-gray;
         margin-bottom: $unit-spacing * 4;
     }
     
     &__paragraph {
-        color: $c-white;
+        color: $c-dark-gray;
         line-height: 50px;
         margin-bottom: $unit-spacing * 4;
     }
