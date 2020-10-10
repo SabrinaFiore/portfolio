@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
+import { PhotoGalleryService } from './photo-gallery.service';
 
 @Component({
   selector: 'app-photo-gallery',
   templateUrl: './photo-gallery.component.html',
 })
-export class PhotoGalleryComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+export class PhotoGalleryComponent implements OnChanges {
+  images:any[];   
+  allImages:any[] = [];    
+    
+  constructor(private imageService: PhotoGalleryService) {    
+    this.allImages = this.imageService.getImages();    
   }
 
-  image: string;
+  ngOnChanges() {    
+    this.allImages = this.imageService.getImages();    
+  }    
 }

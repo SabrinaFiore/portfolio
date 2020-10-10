@@ -13,9 +13,17 @@
 
 .card-l {
     background-color: $c-dark-gray;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
     padding: $unit-spacing*2 0;
     text-align: center;
+
+    &:after {
+        content: '';
+        width: 100%;
+        display: block;
+        position: relative;
+        top: $unit-spacing*2 0;
+        box-shadow: 0 4px 2px 2px rgba(0, 0, 0, 0.75);
+    }
 
     &--number {
         display: flex;
