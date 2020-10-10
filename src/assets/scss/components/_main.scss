@@ -24,5 +24,9 @@
         @include breakpoints(break-x-small) { 
             font-size: var(--h3);
         }
+
+        @include breakpoints(break-medium) { 
+            padding: $unit-spacing;
+        }
     }
 }

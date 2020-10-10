@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 import { PhotoGalleryService } from './photo-gallery.service';
 
 @Component({

@@ -2,27 +2,33 @@
 
 .card--section {
     height: calc(100vh - 3rem);
-    background-color: $c-dark-gray;
+    background-color: $c-white-darker;
 
     &--title {
-        color: $c-white;
+        color: $c-dark-gray;
+
+        @include breakpoints(break-x-small) { 
+            padding: 0 $unit-spacing*2;
+        }
     }
 }
 
 /* Card-l */
 
 .card-l {
-    background-color: $c-dark-gray;
-    padding: $unit-spacing*2 0;
+    background-color: $c-white-darker;
     text-align: center;
-
+    
     &:after {
         content: '';
         width: 100%;
         display: block;
         position: relative;
-        top: $unit-spacing*2 0;
-        box-shadow: 0 4px 2px 2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 0px 1px rgb(0,0,0, 0.56);
+    }
+    
+    &--content {
+        padding: $unit-spacing*2;
     }
 
     &--number {

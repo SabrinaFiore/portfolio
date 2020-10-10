@@ -1,7 +1,7 @@
 <ng-template ngFor let-item [ngForOf]="items" let-i="index">
     <div class="card-l">
-        <div class="l-container">
-            <app-form-layout [columns]="3">
+        <div class="card-l--content l-container">
+            <app-form-layout [columns]="3" class="l-container--x-small">
                 <div class="card-l--number">{{ item.number }}</div>
                 <div class="card-l--role">{{ item.role }}</div>
                 <div class="card-l--company-container">
