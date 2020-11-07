@@ -39,11 +39,11 @@ import { PhotoGalleryComponent } from './components/photo-gallery/photo-gallery.
     PhotoGalleryComponent,
   ],
   imports: [
-    RouterModule,
-    BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
     AngularSvgIconModule,
+    BrowserModule,
+    RouterModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

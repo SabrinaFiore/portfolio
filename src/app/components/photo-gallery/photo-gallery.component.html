@@ -1,11 +1,11 @@
-<div class="photo-gallery l-container" id="photos">
+<div class="photo-gallery l-container--extra-big" id="photos">
 	<div class="photo-gallery--row">    
 		<ul class="photo-gallery--items">    
 			<li class="photo-gallery--item" *ngFor="let img of (allImages)">    
-				<a [routerLink]="['/image', img.id]">    
+				<div [routerLink]="['/image', img.id]">    
 					<img src="{{img.url}}" class="photo-gallery--item-img">    
-				</a>    
+				</div>    
 			</li>    
 		</ul>    
-	</div>    
+	</div> 
 </div>

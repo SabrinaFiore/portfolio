@@ -1,11 +1,17 @@
+/* Photo-gallery */
+
 #photos {
 	line-height: 0;
-	column-count: 5;
-	-webkit-column-count: 5;
-	-moz-column-count: 5;
+	column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
 	column-gap: 10px;
 	-moz-column-gap: 10px;
 	-webkit-column-gap: 10px;
+}
+
+.photo-gallery {
+	padding: $unit-spacing*3 0;
 }
  
 .photo-gallery--item-img {
@@ -16,9 +22,9 @@
  
 @include breakpoints(break-xx-large) {
 	#photos {
-		-moz-column-count:    4;
-		-webkit-column-count: 4;
-		column-count:         4;
+		-moz-column-count:    3;
+		-webkit-column-count: 3;
+		column-count:         3;
 	}
 }
 
