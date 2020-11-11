@@ -1,10 +1,9 @@
-import { Component, ElementRef, Inject, OnChanges, OnInit, QueryList, ViewChild } from '@angular/core';
+import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { PhotoGalleryService } from './photo-gallery.service';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { DOCUMENT } from '@angular/common';
-import { trigger } from '@angular/animations';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,17 +13,19 @@ gsap.registerPlugin(ScrollTrigger);
 })
 
 export class PhotoGalleryComponent implements OnInit {
-  images:any[];   
+  images:any[];
   allImages:any[] = [];
 
   @ViewChild('photoGallery', { static: true }) photoGallery: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryRow', { static: true }) photoGalleryRow: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage01', { static: true }) photoGalleryImage01: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage02', { static: true }) photoGalleryImage02: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage03', { static: true }) photoGalleryImage03: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage04', { static: true }) photoGalleryImage04: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage05', { static: true }) photoGalleryImage05: ElementRef<HTMLDivElement>;
-  @ViewChild('photoGalleryImage') photoGalleryImage: ElementRef<HTMLElement>;
+  @ViewChild('photoGalleryBox', { static: true }) photoGalleryBox: ElementRef<HTMLDivElement>;
+  @ViewChild('sectionOne', { static: true }) sectionOne: ElementRef<HTMLDivElement>;
+  @ViewChild('imageOne', { static: true }) imageOne: ElementRef<HTMLElement>;
+  @ViewChild('imageSecond', { static: true }) imageSecond: ElementRef<HTMLElement>;
+  @ViewChild('imageThird', { static: true }) imageThird: ElementRef<HTMLElement>;
+  @ViewChild('imageFourt', { static: true }) imageFourt: ElementRef<HTMLDivElement>;
+  @ViewChild('imageFift', { static: true }) imageFift: ElementRef<HTMLDivElement>;
+  @ViewChild('imageSixth', { static: true }) imageSixth: ElementRef<HTMLDivElement>;
+  @ViewChild('imageSeventh', { static: true }) imageSeventh: ElementRef<HTMLDivElement>;
   
   constructor(private imageService: PhotoGalleryService, @Inject(DOCUMENT) private document: Document) {    
     this.allImages = this.imageService.getImages();    
@@ -33,47 +34,108 @@ export class PhotoGalleryComponent implements OnInit {
   ngOnChanges() {    
     this.allImages = this.imageService.getImages();    
   }
-
+  
   ngOnInit() {
     this.disableScroll(false);
-    this.scrollAnimations();
     this.initAnimations();
+    this.scrollAnimations();
   }
 
   disableScroll(disabled: boolean): void {
     if (disabled) {
-      this.document.querySelector('body').style.overflowY = 'hidden';
+      this.document.querySelector('body').style.overflowY = 'auto';
     } else {
       this.document.querySelector('body').style.overflowY = 'auto';
     }
   }
 
   initAnimations(): void {
-    gsap.from(this.photoGallery.nativeElement.childNodes, {
-      delay: 0.4,
+    gsap.to(this.photoGallery.nativeElement.childNodes, {
       duration: 0.8,
       y: 30,
       stagger: 0.15,
     });
-    gsap.from(this.photoGalleryRow.nativeElement.childNodes, {
-      delay: 0.5,
-      duration: 0.8,
-      y: 90,
-      stagger: 0.15,
+    gsap.from(this.photoGalleryBox.nativeElement.childNodes, {
+      delay: 0.9,
+      duration: 1,
+      y: 140,
+      stagger: 1,
     });
   }
-
+  
   scrollAnimations(): void { 
-    gsap.to(this.photoGalleryRow.nativeElement.childNodes, {
+    gsap.to(this.imageOne.nativeElement, {
       scrollTrigger: {
-        trigger: this.photoGalleryRow.nativeElement,
-        scrub: true,
-        start: '-130px top',
+        trigger: this.imageOne.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+        markers: true,
       },
-      duration: 0.6,
-      y: -40,
-      stagger: 0.15,
+      x: -180,
+      delay: 1,
+      duration: 1,
     });
+    gsap.to(this.imageSecond.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageSecond.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+      },
+      x: 180,
+      delay: 1,
+      duration: 1,
+    });
+    gsap.to(this.imageThird.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageThird.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+      },
+      x: -180,
+      delay: 1,
+      duration: 1,
+    });
+    gsap.to(this.imageFourt.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageSecond.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+      },
+      x: 180,
+      delay: 1,
+      duration: 1,
+    });
+    gsap.to(this.imageSixth.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageSixth.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+      },
+      x: -180,
+      delay: 1,
+      duration: 1,
+    });
+    gsap.to(this.imageFift.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageSixth.nativeElement,
+        toggleActions: "play none reverse none", 
+        start: 'top center',
+      },
+      x: 180,
+      delay: 1,
+      duration: 1,
+    });
+    gsap.to(this.imageSeventh.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageSeventh.nativeElement,
+        start: 'top center',
+        toggleActions: "play none reverse none", 
+      },
+      x: -180,
+      delay: 1,
+      duration: 1,
+    });
+    // gsap.fromTo($('.photoGalleryImage'), 1, { x:100 }, { y:200 } );
   }
 }
  
