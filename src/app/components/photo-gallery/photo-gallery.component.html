@@ -1,42 +1,102 @@
-<div class="photo-gallery l-container--extra-big" id="photos" #photoGallery>
-	<div class="photo-gallery--box" #photoGalleryBox>    
-
+<div class="l-container--extra-big" #photoGallery>
+	<div class="photo-gallery">
+		<div class="photo-gallery--box" #photoGalleryBox>    
 			<!-- <li class="photo-gallery--item photoGalleryImage" *ngFor="let img of (allImages)">    
 				<img src="{{img.url}}" class="photo-gallery--item-img">    
 			</li> -->
-			<section class="photo-gallery--items" #sectionOne>
-				<figure class="photo-gallery--item image-container one">
+			<ul class="photo-gallery--items">
+				<li class="photo-gallery--item">
 					<img src="../../../assets/images/img01.jpg" class="photo-gallery--item-img" alt="image01" #imageOne/>
-					<figcaption class="caption">21</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container">
-				  <img src="../../../assets/images/img02.jpg" class="photo-gallery--item-img" alt="image02" #imageSecond/>
-				  <figcaption class="caption">Flower</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container">
-				  <img src="../../../assets/images/img03.jpg" class="photo-gallery--item-img" alt="image03" #imageThird/>
-				  <figcaption class="caption" >Flower</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container" >
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								21
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item">
+					<img src="../../../assets/images/img02.jpg" class="photo-gallery--item-img" alt="image02" #imageSecond/>
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								Flower
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item">
+					<img src="../../../assets/images/img03.jpg" class="photo-gallery--item-img" alt="image03" #imageThird/>
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								Flower
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item" >
 					<img src="../../../assets/images/img04.jpg" class="photo-gallery--item-img" alt="image04" #imageFourt/>
-					<figcaption class="caption">Flower</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container" >
-					<img src="../../../assets/images/img03.jpg" class="photo-gallery--item-img" alt="image05" #imageFift/>
-					<figcaption class="caption">
-						'20
-					</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container">
-					<img src="../../../assets/images/img03.jpg" class="photo-gallery--item-img" alt="image06" #imageSixth/>
-					<figcaption class="caption">
-					  Glossary
-					</figcaption>
-				</figure>
-				<figure class="photo-gallery--item image-container">
-				  <img src="../../../assets/images/img04.jpg" class="photo-gallery--item-img" alt="image07" #imageSeventh/>
-				</figure>
-			</section>
-
-	</div> 
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								Flower
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item" >
+					<img src="../../../assets/images/img05.jpg" class="photo-gallery--item-img" alt="image05" #imageFift/>
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								ciao
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item">
+					<img src="../../../assets/images/img06.jpg" class="photo-gallery--item-img" alt="image06" #imageSixth/>
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								Glossary
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="photo-gallery--item">
+					<img src="../../../assets/images/img07.jpg" class="photo-gallery--item-img" alt="image07" #imageSeventh/>
+					<div class="photo-gallery--item-info">
+						<div class="box">
+							<div class="photo-gallery--item-info--tile">
+								title
+							</div>
+							<div class="photo-gallery--item-info--description">
+								hola
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div> 
+	</div>
 </div>

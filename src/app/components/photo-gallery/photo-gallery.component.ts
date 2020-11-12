@@ -18,7 +18,6 @@ export class PhotoGalleryComponent implements OnInit {
 
   @ViewChild('photoGallery', { static: true }) photoGallery: ElementRef<HTMLDivElement>;
   @ViewChild('photoGalleryBox', { static: true }) photoGalleryBox: ElementRef<HTMLDivElement>;
-  @ViewChild('sectionOne', { static: true }) sectionOne: ElementRef<HTMLDivElement>;
   @ViewChild('imageOne', { static: true }) imageOne: ElementRef<HTMLElement>;
   @ViewChild('imageSecond', { static: true }) imageSecond: ElementRef<HTMLElement>;
   @ViewChild('imageThird', { static: true }) imageThird: ElementRef<HTMLElement>;
@@ -105,7 +104,7 @@ export class PhotoGalleryComponent implements OnInit {
       delay: 1,
       duration: 1,
     });
-    gsap.to(this.imageSixth.nativeElement, {
+    gsap.to(this.imageFift.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSixth.nativeElement,
         toggleActions: "play none reverse none", 
@@ -115,7 +114,7 @@ export class PhotoGalleryComponent implements OnInit {
       delay: 1,
       duration: 1,
     });
-    gsap.to(this.imageFift.nativeElement, {
+    gsap.to(this.imageSixth.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSixth.nativeElement,
         toggleActions: "play none reverse none", 
