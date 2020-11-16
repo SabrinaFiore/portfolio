@@ -52,13 +52,11 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.photoGallery.nativeElement.childNodes, {
       duration: 0.8,
       y: 30,
-      stagger: 0.15,
     });
     gsap.from(this.photoGalleryBox.nativeElement.childNodes, {
       delay: 0.9,
       duration: 1,
-      y: 140,
-      stagger: 1,
+      y: 180,
     });
   }
   
@@ -67,11 +65,11 @@ export class PhotoGalleryComponent implements OnInit {
       scrollTrigger: {
         trigger: this.imageOne.nativeElement,
         toggleActions: "play none reverse none", 
-        start: 'top center',
+        start: 'end',
         markers: true,
       },
       x: -180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageSecond.nativeElement, {
@@ -81,7 +79,7 @@ export class PhotoGalleryComponent implements OnInit {
         start: 'top center',
       },
       x: 180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageThird.nativeElement, {
@@ -91,27 +89,27 @@ export class PhotoGalleryComponent implements OnInit {
         start: 'top center',
       },
       x: -180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageFourt.nativeElement, {
       scrollTrigger: {
-        trigger: this.imageSecond.nativeElement,
+        trigger: this.imageFourt.nativeElement,
         toggleActions: "play none reverse none", 
         start: 'top center',
       },
       x: 180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageFift.nativeElement, {
       scrollTrigger: {
-        trigger: this.imageSixth.nativeElement,
+        trigger: this.imageFift.nativeElement,
         toggleActions: "play none reverse none", 
         start: 'top center',
       },
       x: -180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageSixth.nativeElement, {
@@ -121,17 +119,17 @@ export class PhotoGalleryComponent implements OnInit {
         start: 'top center',
       },
       x: 180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     gsap.to(this.imageSeventh.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSeventh.nativeElement,
-        start: 'top center',
         toggleActions: "play none reverse none", 
+        start: 'top center',
       },
       x: -180,
-      delay: 1,
+      delay: 0.5,
       duration: 1,
     });
     // gsap.fromTo($('.photoGalleryImage'), 1, { x:100 }, { y:200 } );
