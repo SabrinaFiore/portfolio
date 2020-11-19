@@ -1,41 +1,53 @@
 /* Card-section */
 
 .card--section {
-    height: calc(100vh - 3rem);
-    background-color: $c-white-darker;
+  background-color: $c-white-darker;
 
-    &--title {
-        color: $c-dark-gray;
+  &--title {
+    color: $c-dark-gray;
 
-        @include breakpoints(break-x-small) { 
-            padding: 0 $unit-spacing*2;
-        }
+    @include breakpoints(break-medium) {
+      padding: $unit-spacing*2;
     }
+  }
+}
+
+/* Cards */
+.cards {
+  align-items: center;
+  display: grid;
+  height: calc(100vh - 3rem);
+  grid-gap: calc(100px / 2);
+  grid-template-columns: repeat(10, 400px);
+  margin: 0 $unit-spacing*2;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  white-space: unset;
+
+  @include breakpoints(break-x-small) {
+    display: block;
+  }
 }
 
 /* Card-l */
 
 .card-l {
-    background-color: $c-white-darker;
-    text-align: center;
-    
-    &:after {
-        content: '';
-        width: 100%;
-        display: block;
-        position: relative;
-        box-shadow: 0px 0px 0px 1px rgb(0,0,0, 0.56);
-    }
-    
-    &--content {
-        padding: $unit-spacing*2;
-    }
+  background-color: $c-white-darker--1;
+  text-align: center;
 
-    &--number,
-    &--role,
-    &--company-container {
-        display: flex;
-        justify-content: center;
-        padding: 0 1rem;
-    }
+  @include breakpoints(break-x-small) {
+    margin-bottom: $unit-spacing;
+  }
+
+  &--content {
+    padding: $unit-spacing*2;
+  }
+
+  &--number,
+  &--role,
+  &--company-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+  }
 }

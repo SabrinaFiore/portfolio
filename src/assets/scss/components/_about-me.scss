@@ -1,42 +1,40 @@
 /* About me */
 
 .about-me {
-    background-color: $c-white-darker;
+  background-color: $c-white-darker;
 
-    @include breakpoints(break-x-small) { 
-        display: flex;
-        align-items: center;
+  @include breakpoints(break-x-small) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 3rem);
+
+    @include breakpoints(break-x-small) {
+      padding: $unit-spacing*2;
     }
+  }
 
-    &__content {
-        align-items: center;
-        display: flex;
-        height: calc(100vh - 3rem);
+  &__title {
+    color: $c-dark-gray;
+    margin-bottom: $unit-spacing * 4;
 
-        @include breakpoints(break-x-small) {
-            display: block;
-            height: auto;
-            padding: $unit-spacing*2;
-        }
+    @include breakpoints(break-medium) {
+        margin-bottom: $unit-spacing--1;
     }
+  }
 
-    &__title {
-        color: $c-dark-gray;
-        margin-bottom: $unit-spacing * 4;
+  &__paragraph {
+    color: $c-dark-gray;
+    line-height: 50px;
+    margin-bottom: $unit-spacing * 4;
 
-        @include breakpoints(break-medium) {
-            margin-bottom: $unit-spacing--1;
-        }
+    @include breakpoints(break-medium) {
+        line-height: 40px;
+        margin-bottom: unset;
     }
-    
-    &__paragraph {
-        color: $c-dark-gray;
-        line-height: 50px;
-        margin-bottom: $unit-spacing * 4;
-
-        @include breakpoints(break-medium) { 
-            line-height: 40px;
-            margin-bottom: unset;
-        }
-    }
+  }
 }

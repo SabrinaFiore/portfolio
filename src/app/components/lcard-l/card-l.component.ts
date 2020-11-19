@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-card-l',
   templateUrl: './card-l.component.html',
+  // tslint:disable-next-line: no-host-metadata-property
+  host: { class: 'cards' },
 })
 export class cardLComponent implements OnInit {
 
@@ -36,6 +38,20 @@ export class cardLComponent implements OnInit {
     {
       id: 4,
       number: '04',
+      role: 'UI/UX Designer',
+      agency: 'Ideare Communication',
+      years: '31 July 2017 - Rome',
+    },
+    {
+      id: 5,
+      number: '05',
+      role: 'UI/UX Designer',
+      agency: 'Ideare Communication',
+      years: '31 July 2017 - Rome',
+    },
+    {
+      id: 6,
+      number: '06',
       role: 'UI/UX Designer',
       agency: 'Ideare Communication',
       years: '31 July 2017 - Rome',

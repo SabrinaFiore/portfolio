@@ -25,15 +25,15 @@ export class PhotoGalleryComponent implements OnInit {
   @ViewChild('imageFift', { static: true }) imageFift: ElementRef<HTMLDivElement>;
   @ViewChild('imageSixth', { static: true }) imageSixth: ElementRef<HTMLDivElement>;
   @ViewChild('imageSeventh', { static: true }) imageSeventh: ElementRef<HTMLDivElement>;
-  
-  constructor(private imageService: PhotoGalleryService, @Inject(DOCUMENT) private document: Document) {    
-    this.allImages = this.imageService.getImages();    
+
+  constructor(private imageService: PhotoGalleryService, @Inject(DOCUMENT) private document: Document) {
+    this.allImages = this.imageService.getImages();
   }
 
-  ngOnChanges() {    
-    this.allImages = this.imageService.getImages();    
+  ngOnChanges() {
+    this.allImages = this.imageService.getImages();
   }
-  
+
   ngOnInit() {
     this.disableScroll(false);
     this.initAnimations();
@@ -59,12 +59,12 @@ export class PhotoGalleryComponent implements OnInit {
       y: 180,
     });
   }
-  
-  scrollAnimations(): void { 
+
+  scrollAnimations(): void {
     gsap.to(this.imageOne.nativeElement, {
       scrollTrigger: {
         trigger: this.imageOne.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'end',
         markers: true,
       },
@@ -75,7 +75,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageSecond.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSecond.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: 180,
@@ -85,7 +85,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageThird.nativeElement, {
       scrollTrigger: {
         trigger: this.imageThird.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: -180,
@@ -95,7 +95,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageFourt.nativeElement, {
       scrollTrigger: {
         trigger: this.imageFourt.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: 180,
@@ -105,7 +105,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageFift.nativeElement, {
       scrollTrigger: {
         trigger: this.imageFift.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: -180,
@@ -115,7 +115,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageSixth.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSixth.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: 180,
@@ -125,7 +125,7 @@ export class PhotoGalleryComponent implements OnInit {
     gsap.to(this.imageSeventh.nativeElement, {
       scrollTrigger: {
         trigger: this.imageSeventh.nativeElement,
-        toggleActions: "play none reverse none", 
+        toggleActions: 'play none reverse none',
         start: 'top center',
       },
       x: -180,
@@ -135,4 +135,3 @@ export class PhotoGalleryComponent implements OnInit {
     // gsap.fromTo($('.photoGalleryImage'), 1, { x:100 }, { y:200 } );
   }
 }
- 
