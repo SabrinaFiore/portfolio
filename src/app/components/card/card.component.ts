@@ -9,10 +9,6 @@ import { CardService } from './card.service';
 })
 
 export class CardComponent {
-  number: number;
-  role: string;
-  agency: string;
-  years: string;
   items: any[];
 
   constructor(private cardService: CardService) {
