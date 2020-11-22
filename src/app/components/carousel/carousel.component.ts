@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-experience',
-  templateUrl: './work-experience.component.html',
+  templateUrl: './carousel.component.html',
 })
-export class WorkExperienceComponent implements OnInit {
-
-  title: string = "Work experiences.";
+export class CarouselComponent implements OnInit {
+  title = 'Work experiences.';
 
   constructor() { }
 

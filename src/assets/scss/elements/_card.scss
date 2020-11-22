@@ -1,6 +1,6 @@
-/* Card-section */
+/* carousel */
 
-.card--section {
+.carousel {
   background-color: $c-white-darker;
 
   &--title {
@@ -31,16 +31,28 @@
 
 /* Card-l */
 
-.card-l {
-  background-color: $c-white-darker--1;
+.card {
   text-align: center;
+  position: relative;
 
   @include breakpoints(break-x-small) {
     margin-bottom: $unit-spacing;
   }
 
-  &--content {
+  &--img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: center;
+    opacity: 0.7;
+  }
+
+  &--claim {
+    bottom: 0;
     padding: $unit-spacing*2;
+    position: absolute;
+    position: absolute;
+    width: 100%;
   }
 
   &--number,

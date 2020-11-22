@@ -1,6 +1,4 @@
 import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
-import { PhotoGalleryService } from './photo-gallery.service';
-
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { DOCUMENT } from '@angular/common';
@@ -13,9 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 })
 
 export class PhotoGalleryComponent implements OnInit {
-  images:any[];
-  allImages:any[] = [];
-
   @ViewChild('photoGallery', { static: true }) photoGallery: ElementRef<HTMLDivElement>;
   @ViewChild('photoGalleryBox', { static: true }) photoGalleryBox: ElementRef<HTMLDivElement>;
   @ViewChild('imageOne', { static: true }) imageOne: ElementRef<HTMLElement>;
@@ -26,12 +21,7 @@ export class PhotoGalleryComponent implements OnInit {
   @ViewChild('imageSixth', { static: true }) imageSixth: ElementRef<HTMLDivElement>;
   @ViewChild('imageSeventh', { static: true }) imageSeventh: ElementRef<HTMLDivElement>;
 
-  constructor(private imageService: PhotoGalleryService, @Inject(DOCUMENT) private document: Document) {
-    this.allImages = this.imageService.getImages();
-  }
-
-  ngOnChanges() {
-    this.allImages = this.imageService.getImages();
+  constructor( @Inject(DOCUMENT) private document: Document) {
   }
 
   ngOnInit() {

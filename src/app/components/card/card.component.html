@@ -1,0 +1,23 @@
+<!-- <ng-template ngFor let-item [ngForOf]="items" let-i="index"> -->
+  <div *ngFor="let item of items">
+    <div class="card">
+      <!-- <img class="card--img" src="../../../assets/images/gallery_work01.jpg" alt="">
+      <li class="photo-gallery--item photoGalleryImage" *ngFor="let img of (allImages)"></li>     -->
+      <img src="{{item.url}}" class="card--img">
+      <div class="card--content l-container--big">
+        <!-- <app-form-layout [columns]="3" class="l-container--x-small"> -->
+          <div class="card--claim">
+            <div class="card--number">{{ item.number }}</div>
+            <div class="card--role">{{ item.role }}</div>
+            <div class="card--company-container">
+                <div class="card--company-info">
+                    <div class="card--company-name">{{ item.agency }}</div>
+                    <div class="card--employment-date">{{ item.years }}</div>
+                </div>
+            </div>
+          </div>
+          <!-- </app-form-layout> -->
+      </div>
+    </div>
+  </div>
+<!-- </ng-template> -->

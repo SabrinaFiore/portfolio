@@ -1,18 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-card-l',
-  templateUrl: './card-l.component.html',
-  // tslint:disable-next-line: no-host-metadata-property
-  host: { class: 'cards' },
+@Injectable({
+  providedIn: 'root'
 })
-export class cardLComponent implements OnInit {
 
-  number: number;
-  role: string;
-  agency: string;
-  years: string;
-
+export class CardService {
   items = [
     {
       id: 1,
@@ -20,6 +12,7 @@ export class cardLComponent implements OnInit {
       role: 'Front-End Developer',
       agency: 'Crealogix Group',
       years: 'Still working here - Barcelona',
+      url: 'assets/images/img06.jpg',
     },
     {
       id: 2,
@@ -27,6 +20,7 @@ export class cardLComponent implements OnInit {
       role: 'Front-End Developer Junior',
       agency: 'Roonroom',
       years: 'May 2019 - Barcelona',
+      url: 'assets/images/img01.jpg',
     },
     {
       id: 3,
@@ -34,6 +28,7 @@ export class cardLComponent implements OnInit {
       role: 'Front-End Developer Junior',
       agency: 'Accon Softwere',
       years: 'Abril 2018 - June 2019 ',
+      url: 'assets/images/img01.jpg',
     },
     {
       id: 4,
@@ -41,6 +36,7 @@ export class cardLComponent implements OnInit {
       role: 'UI/UX Designer',
       agency: 'Ideare Communication',
       years: '31 July 2017 - Rome',
+      url: 'assets/images/img01.jpg',
     },
     {
       id: 5,
@@ -48,6 +44,7 @@ export class cardLComponent implements OnInit {
       role: 'UI/UX Designer',
       agency: 'Ideare Communication',
       years: '31 July 2017 - Rome',
+      url: 'assets/images/img01.jpg',
     },
     {
       id: 6,
@@ -55,12 +52,11 @@ export class cardLComponent implements OnInit {
       role: 'UI/UX Designer',
       agency: 'Ideare Communication',
       years: '31 July 2017 - Rome',
+      url: 'assets/images/img01.jpg',
     }
   ];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  getImages(): any[] {
+    return this.items;
   }
-
 }
