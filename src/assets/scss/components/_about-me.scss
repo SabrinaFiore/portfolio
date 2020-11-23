@@ -15,6 +15,7 @@
 
     @include breakpoints(break-x-small) {
       padding: $unit-spacing*2;
+      height: auto;
     }
   }
 
@@ -23,7 +24,7 @@
     margin-bottom: $unit-spacing * 4;
 
     @include breakpoints(break-medium) {
-        margin-bottom: $unit-spacing--1;
+      margin-bottom: $unit-spacing--1;
     }
   }
 
@@ -33,8 +34,8 @@
     margin-bottom: $unit-spacing * 4;
 
     @include breakpoints(break-medium) {
-        line-height: 40px;
-        margin-bottom: unset;
+      line-height: 40px;
+      margin-bottom: unset;
     }
   }
 }

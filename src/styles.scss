@@ -5,20 +5,21 @@
 @import '../src/assets/scss/tools/unit';
 
 /* Base */
-@import '../src/assets/scss/settings/reset';
-@import '../src/assets/scss/settings/typography';
 @import '../src/assets/scss/settings/color';
+@import '../src/assets/scss/settings/typography';
+@import '../src/assets/scss/settings/reset';
 
 /* Elements */
 @import '../src/assets/scss/elements/border';
-@import '../src/assets/scss/elements/layout';
 @import '../src/assets/scss/elements/headings';
 
 /* Components */
-@import '../src/assets/scss/components/header';
-@import '../src/assets/scss/components/main';
-@import '../src/assets/scss/components/scroll-down';
 @import '../src/assets/scss/components/about-me';
+@import '../src/assets/scss/components/card';
+@import '../src/assets/scss/components/carousel';
 @import '../src/assets/scss/components/form-layout';
+@import '../src/assets/scss/components/header';
+@import '../src/assets/scss/components/layout';
+@import '../src/assets/scss/components/main';
 @import '../src/assets/scss/components/photo-gallery';
-@import '../src/assets/scss/elements/card';
+@import '../src/assets/scss/components/scroll-down';

@@ -1,32 +1,32 @@
 /* Main */
 
-.main {  
-    position: relative;
-    background-color: $c-white-darker;
+.main {
+  position: relative;
+  background-color: $c-white-darker;
 
-    &__photo {
-        width: 100%;
-        max-width: 2048px;
-        object-fit: cover;
-        height: calc(100vh - 3rem);
-        opacity: 0.7;
+  &__photo {
+    width: 100%;
+    max-width: 2048px;
+    object-fit: cover;
+    height: calc(100vh - 3rem);
+    opacity: 0.7;
+  }
+
+  &__information {
+    position: absolute;
+    color: $c-dark-gray;
+    padding: $unit-spacing $unit-spacing $unit-spacing $unit-spacing*3;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: $s480;
+    width: 100%;
+
+    @include breakpoints(break-x-small) {
+        font-size: var(--h3);
     }
 
-    &__information {
-        position: absolute;
-        color: $c-dark-gray;
-        padding: $unit-spacing $unit-spacing $unit-spacing $unit-spacing*3;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: $s480;
-        width: 100%;
-
-        @include breakpoints(break-x-small) { 
-            font-size: var(--h3);
-        }
-
-        @include breakpoints(break-medium) { 
-            padding: $unit-spacing;
-        }
+    @include breakpoints(break-medium) {
+        padding: $unit-spacing;
     }
+  }
 }

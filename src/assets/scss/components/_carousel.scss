@@ -1,0 +1,21 @@
+/* carousel */
+
+.carousel {
+  background-color: $c-white-darker;
+  height: calc(100vh - 3rem);
+
+  &--title {
+    color: $c-dark-gray;
+    padding-bottom: $unit-spacing*2;
+
+    @include breakpoints(break-x-small) {
+      padding: $unit-spacing*2;
+    }
+  }
+
+  &--items {
+    display: flex;
+    align-items: center;
+    height: 80%;
+  }
+}
