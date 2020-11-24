@@ -1,15 +1,27 @@
-/* carousel */
+/* Carousel */
 
 .carousel {
   background-color: $c-white-darker;
   height: calc(100vh - 3rem);
 
+  @include breakpoints(break-x-small) {
+    height: auto;
+  }
+
   &--title {
     color: $c-dark-gray;
-    padding-bottom: $unit-spacing*2;
+    padding-bottom: $unit-spacing;
 
-    @include breakpoints(break-x-small) {
+    @include breakpoints(break-x-medium) {
       padding: $unit-spacing*2;
+    }
+  }
+
+  &--subtitle {
+    font-family: $typography-secondary-regular;
+
+    @include breakpoints(break-x-medium) {
+      padding: 0 $unit-spacing*2;
     }
   }
 

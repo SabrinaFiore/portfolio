@@ -20,6 +20,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { MainComponent } from './components/main/main.component';
 import { CardComponent } from './components/card/card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CarouselComponent,
     FormLayoutComponent,
     PhotoGalleryComponent,
+    FooterComponent,
   ],
   imports: [
     AppRoutingModule,

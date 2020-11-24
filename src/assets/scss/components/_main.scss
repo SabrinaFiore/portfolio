@@ -16,17 +16,17 @@
     position: absolute;
     color: $c-dark-gray;
     padding: $unit-spacing $unit-spacing $unit-spacing $unit-spacing*3;
-    top: 50%;
+    top: 47%;
     transform: translateY(-50%);
-    max-width: $s480;
+    max-width: 550px;
     width: 100%;
 
     @include breakpoints(break-x-small) {
-        font-size: var(--h3);
+      font-size: var(--h3);
     }
 
     @include breakpoints(break-medium) {
-        padding: $unit-spacing;
+      padding: $unit-spacing;
     }
   }
 }

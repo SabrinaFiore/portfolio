@@ -54,7 +54,7 @@ export class CardService {
     {
       id: 6,
       number: '06',
-      role: 'Photographer Assistant - Rome',
+      role: 'Photographer Assistant',
       agency: 'RAW - Rome Art Week',
       years: '31 July 2017 - Rome',
       url: 'assets/images/gallery_work06.jpg',
@@ -66,7 +66,7 @@ export class CardService {
       role: 'Sampling',
       agency: 'Red Bull',
       years: 'December 2013 - May 2016',
-      url: 'assets/images/img01.jpg',
+      url: 'assets/images/gallery_work07.jpg',
       link: 'https://www.redbull.com/it-it/'
     }
   ];

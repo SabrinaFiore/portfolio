@@ -4,12 +4,13 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-work-experience',
   templateUrl: './carousel.component.html',
 })
+
 export class CarouselComponent implements OnInit {
-  title = 'Work experiences.';
+  title = 'Work experiences';
+  subtitle = 'Scroll between cities, to see more about my work experience';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

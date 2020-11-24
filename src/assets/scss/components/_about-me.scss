@@ -3,7 +3,7 @@
 .about-me {
   background-color: $c-white-darker;
 
-  @include breakpoints(break-x-small) {
+  @include breakpoints(break-x-medium) {
     display: flex;
     align-items: center;
   }
@@ -13,7 +13,7 @@
     display: flex;
     height: calc(100vh - 3rem);
 
-    @include breakpoints(break-x-small) {
+    @include breakpoints(break-x-medium) {
       padding: $unit-spacing*2;
       height: auto;
     }

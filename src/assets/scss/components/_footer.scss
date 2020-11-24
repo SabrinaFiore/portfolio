@@ -1,0 +1,27 @@
+/* Footer */
+
+.footer {
+  display: flex;
+  padding: $unit-spacing*2;
+  color: $c-dark-gray;
+  background-color: $c-white;
+  border-top: 1px solid #e5e5e5;
+
+  @include breakpoints(break-x-medium) {
+    display: block;
+    text-align: center;
+  }
+
+  ul, a {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__naming {
+  font-family: $typography-primary-regular;
+}
