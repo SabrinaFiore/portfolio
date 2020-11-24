@@ -1,11 +1,14 @@
 /* Footer */
 
 .footer {
-  display: flex;
-  padding: $unit-spacing*2;
-  color: $c-dark-gray;
   background-color: $c-white;
   border-top: 1px solid #e5e5e5;
+  bottom: 0;
+  color: $c-dark-gray;
+  display: flex;
+  padding: $unit-spacing*2;
+  position: fixed;
+  width: 100%;
 
   @include breakpoints(break-x-medium) {
     display: block;
