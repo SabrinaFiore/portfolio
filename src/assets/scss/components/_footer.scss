@@ -2,13 +2,27 @@
 
 .footer {
   background-color: $c-white;
-  border-top: 1px solid #e5e5e5;
-  bottom: 0;
-  color: $c-dark-gray;
-  display: flex;
-  padding: $unit-spacing*2;
-  position: fixed;
+  padding: $unit-spacing--1 $unit-spacing*2;
   width: 100%;
+  bottom: 0;
+  box-shadow: 0px 0px 5px #868686;
+  position: fixed;
+  z-index: 5;
+
+  @include breakpoints(break-x-medium) {
+    padding: $unit-spacing $unit-spacing*2;
+  }
+
+  &--content {
+    align-items: center;
+    display: flex;
+    color: $c-dark-gray;
+    justify-content: space-between;
+
+    @include breakpoints(break-x-medium) {
+      justify-content: center;
+    }
+  }
 
   @include breakpoints(break-x-medium) {
     display: block;
@@ -19,12 +33,42 @@
     list-style: none;
     text-decoration: none;
   }
-}
 
-.footer > * {
-  flex:  1 100%;
-}
+  &--addr {
+    display: flex;
+    align-items: center;
 
-.footer__naming {
-  font-family: $typography-primary-regular;
+    @include breakpoints(break-x-medium) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &--advertising {
+    font-family: $typography-secondary-regular;
+    font-style: italic;
+    padding-right: $unit-spacing--1;
+
+    @include breakpoints(break-x-medium) {
+      margin-bottom: $unit-spacing--1;
+    }
+  }
+
+  &--email {
+    font-style: normal;
+  }
+
+  &--social-items {
+    display: flex;
+  }
+
+  &--social-item {
+    padding-right: $unit-spacing--2;
+  }
+
+  &--social-icon {
+    height: 100%;
+    max-width: 20px;
+    width: 100%;
+  }
 }

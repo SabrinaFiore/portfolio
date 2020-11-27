@@ -9,14 +9,14 @@
     max-width: 2048px;
     object-fit: cover;
     height: calc(100vh - 3rem);
-    opacity: 0.7;
+    filter: brightness(90%);
   }
 
   &__information {
     position: absolute;
-    color: $c-dark-gray;
+    color: $c-white-darker;
     padding: $unit-spacing $unit-spacing $unit-spacing $unit-spacing*3;
-    top: 47%;
+    top: 50%;
     transform: translateY(-50%);
     max-width: 550px;
     width: 100%;

@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class IconComponent implements OnInit {
-
-  // icon: '../../../assets/icons/multimedia.svg';
-
   constructor() { }
 
   ngOnInit(): void { }

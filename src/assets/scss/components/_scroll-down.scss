@@ -1,28 +1,28 @@
 /*Scroll-down*/
 
 .scroll-down {
-    bottom: 0;
-    display: flex;
-    left: 0;
-    justify-content: center;
-    padding-bottom: 1.5rem;
-    position: absolute;
-    right: 0;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  justify-content: center;
+  padding-bottom: $unit-spacing*2;
+  position: absolute;
+  right: 0;
 
-    &--content {
-        text-align: center;
-    }
+  @include breakpoints(break-x-medium) {
+    padding-bottom: $unit-spacing*4;
+  }
 
-    &--text {
-        color: $c-dark-gray;
-    }
+  &--content {
+    text-align: center;
+  }
+
+  &--text,
+  &--icon {
+    color: $c-white-darker;
+  }
 }
 
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: $c-dark-gray;
+  padding-top: $unit-spacing--2;
 }
