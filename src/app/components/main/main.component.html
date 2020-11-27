@@ -1,7 +1,10 @@
 <main class="main">
-    <img class="main__photo" src="../../../assets/images/main_image-darker.JPG">
-    <div class="main__content">
-      <h1 class="main__information h1">{{ claim }}</h1>
+    <img class="main--photo" src="../../../assets/images/main_image-darker.JPG">
+    <div class="main--content">
+      <div class="main--content-info">
+        <h1 class="main--claim h1">{{ claim }}</h1>
+        <div class="main--claim-description h4">{{ claimDescription }}</div>
+      </div>
       <app-scroll></app-scroll>
     </div>
 </main>
