@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   host: { class: 'case-study' },
 })
 export class CaseStudySecondComponent implements OnInit {
-  title = 'Baj Aljazira - Banking';
   constructor() { }
 
   ngOnInit(): void {

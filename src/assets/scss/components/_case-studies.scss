@@ -7,9 +7,24 @@
 }
 
 .case-study {
-  &--title {
+  &--title,
+  &--subtitle {
     color: $c-dark-gray;
     font-family: $typography-primary-regular;
     font-weight: 500;
+  }
+
+  &--gallery {
+    display: flex;
+    overflow-x: auto;
+    margin: $unit-spacing*2;
+  }
+
+  &--gallery-img {
+    box-shadow: 7px 7px 5px 0px rgb(134, 134, 134);
+    height: auto;
+    max-width: 700px;
+    padding-right: $unit-spacing--1;
+    width: 100%;
   }
 }

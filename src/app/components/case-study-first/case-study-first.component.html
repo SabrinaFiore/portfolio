@@ -1,1 +1,7 @@
-<div class="case-study--title h4">{{ title }}</div>
+<div class="case-study--subtitle h5">Design</div>
+<div class="case-study--gallery">
+  <ng-template ngFor let-item [ngForOf]="styleguide" let-i="index">
+    <img class="case-study--gallery-img" src="{{ item.url }}" alt="">
+  </ng-template>
+</div>
+<div class="case-study--subtitle h5">Development</div>
