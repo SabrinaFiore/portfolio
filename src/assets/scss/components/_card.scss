@@ -40,7 +40,7 @@
       background-image: linear-gradient(to bottom, #95b5fd 0%, #980e00 100%);
       right: 0;
       left: 0;
-      opacity: 0.7;
+      opacity: 0.8;
 
       @include breakpoints(break-x-small) {
         height: 200px;
@@ -87,12 +87,12 @@
 
   &--role {
     font-family: $typography-primary-regular;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   &--company-container {
     font-family: $typography-secondary-regular;
-    line-height: $unit-spacing-3;
+    line-height: $unit-spacing-1;
   }
 }
 

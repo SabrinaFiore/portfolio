@@ -18,7 +18,7 @@ export class CardService {
     {
       id: 2,
       number: '02',
-      role: 'Front-End Developer Junior',
+      role: 'Front-End Developer',
       agency: 'Roonroom - Barcelona',
       years: 'Jun 2018 - May 2019',
       url: 'assets/images/gallery_work02.jpg',

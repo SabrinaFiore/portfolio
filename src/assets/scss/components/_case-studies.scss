@@ -1,0 +1,15 @@
+/* Case studies */
+
+.case-studies {
+  background-color: $c-white--1;
+	margin-bottom: $unit-spacing*2;
+  padding: $unit-spacing*8 $unit-spacing*2 $unit-spacing*3;
+}
+
+.case-study {
+  &--title {
+    color: $c-dark-gray;
+    font-family: $typography-primary-regular;
+    font-weight: 500;
+  }
+}

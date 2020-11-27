@@ -21,6 +21,8 @@ import { MainComponent } from './components/main/main.component';
 import { CardComponent } from './components/card/card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CaseStudyFirstComponent } from './components/case-study-first/case-study-first.component';
+import { CaseStudySecondComponent } from './components/case-study-second/case-study-second.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FormLayoutComponent,
     PhotoGalleryComponent,
     FooterComponent,
+    CaseStudyFirstComponent,
+    CaseStudySecondComponent,
   ],
   imports: [
     AppRoutingModule,
