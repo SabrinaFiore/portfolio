@@ -17,9 +17,9 @@ export class CaseStudyComponent implements OnInit {
       subtitle: 'Design',
       case: {
         // tslint:disable-next-line: max-line-length
-        introduction: 'Hey you, welcome! Nice to meet you. I would like to introduce you to the case study of my Portfolio, I had this project in my mind for a long time and I really enjoyed designing and developing it.',
-        concept: 'Concept',
-        description: 'Realize something that could represent me through the photos that I took using my developing skills',
+        introduction: 'Hey welcome! Nice to meet you. I would like to introduce you to the case study of my Portfolio, I had this project in my mind for a long time and I really enjoyed designing and developing it.',
+        concept: 'The Concept:',
+        description: 'Realizing something that could represent me through the photos that I took highlighting my developing skills',
       },
       image: [
         {
