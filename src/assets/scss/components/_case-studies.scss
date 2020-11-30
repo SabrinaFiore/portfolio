@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       flex-direction: row-reverse;
     }
 
@@ -44,6 +44,6 @@
     max-width: 700px;
     padding-right: $unit-spacing--1;
     position: relative;
-    width: 100%;
+    // width: 100%;
   }
 }
