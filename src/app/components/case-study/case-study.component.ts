@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-case-study-first',
-  templateUrl: './case-study-first.component.html',
+  selector: 'app-case-study',
+  templateUrl: './case-study.component.html',
   // tslint:disable-next-line: no-host-metadata-property
   host: { class: 'case-study' },
 })
 
-export class CaseStudyFirstComponent implements OnInit {
+export class CaseStudyComponent implements OnInit {
   constructor() { }
 
   styleguide = [

@@ -18,6 +18,7 @@
 .card {
   text-align: center;
   position: relative;
+  transition: width 2s;
 
   @include breakpoints(break-x-small) {
     margin-bottom: $unit-spacing;
