@@ -36,6 +36,9 @@
     &:last-child {
       width: 40%;
       flex: 2;
+      height: 400px;
+      overflow: hidden;
+      overflow-y: auto;
     }
   }
 
