@@ -7,37 +7,41 @@
 }
 
 .case-study {
-  &:nth-child(even) {
-
+  &--item {
+    &:nth-child(even) {
+      .case-study--cells {
+        flex-direction: row-reverse;
+      }
+    }
   }
 
   &--cells {
     align-items: flex-start;
     display: flex;
 
-    @include breakpoints(break-x-medium) {
+    @include breakpoints(break-medium) {
       display: block;
     }
   }
 
   &--cell {
-    width: 50%;
     margin: $unit-spacing*2 0;
     font-family: $typography-secondary-regular;
-    line-height: 28px;
+
+    @include breakpoints(break-medium) {
+      width: 100%;
+    }
 
     &:first-child {
-
       flex: 1;
       padding: 0 $unit-spacing*2;
     }
 
     &:last-child {
-
-      flex: 2;
       height: 400px;
       overflow: hidden;
       overflow-y: auto;
+      width: 55%;
     }
   }
 
@@ -46,6 +50,24 @@
     color: $c-dark-gray;
     font-family: $typography-primary-regular;
     font-weight: 500;
+  }
+
+  &--subtitle-info {
+    color: $c-dark-gray;
+    font-family: $typography-secondary-regular;
+    padding-top: $unit-spacing--2;
+  }
+
+  &--case {
+    color: $c-dark-gray;
+    font-family: $typography-secondary-regular;
+    line-height: 30px;
+
+    &-concept {
+      font-family: $typography-primary-regular;
+      font-weight: bolder;
+      padding-top: $unit-spacing;
+    }
   }
 
   &--gallery {
@@ -57,7 +79,7 @@
 
   &--gallery-img {
     height: auto;
-    max-width: 700px;
+    max-width: 650px;
     padding-right: $unit-spacing--1;
     position: relative;
     width: 100%;

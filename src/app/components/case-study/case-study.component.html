@@ -1,9 +1,9 @@
 <ul class="case-study">
   <ng-template ngFor let-item [ngForOf]="styleguide" let-i="index">
     <li class="case-study--item">
-      <div class="case-study--title h4">{{ item.title }}</div>
-      <div class="case-study--subtitle h5">{{ item.subtitle }}</div>
-      <div class="case-study--subtitle-info h5">{{ item.info }}</div>
+      <div class="case-study--title h3">{{ item.title }}</div>
+      <div class="case-study--subtitle h4">{{ item.subtitle }}</div>
+      <div class="case-study--subtitle-info">{{ item.info }}</div>
       <div class="case-study--cells">
         <div class="case-study--cell">
           <div class="case-study--case">
