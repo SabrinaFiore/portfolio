@@ -5,10 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './view-work.component.html',
 })
 export class ViewWorkComponent implements OnInit {
+  mainCaseStudy = "../../../asset/images/main_case-study.jpg";
+  claimCaseStudy= "hola";
+  descriptionCaseStudy = "hola hola";
+
   fistCase = 'Portfolio';
   secondCase = 'Baj Aljazira - Banking';
 
-  constructor() { }
+  claim = "ciao";
 
   ngOnInit() {
   }
