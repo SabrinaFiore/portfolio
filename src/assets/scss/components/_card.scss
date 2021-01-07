@@ -3,9 +3,9 @@
 .cards {
   align-items: center;
   display: grid;
-  grid-gap: calc(100px / 2);
+  grid-gap: calc(100px / 4);
   grid-template-columns: repeat(1, 400px);
-  margin: 0 $unit-spacing*2;
+  margin: $unit-spacing $unit-spacing*2;
   scroll-snap-type: x proximity;
   white-space: unset;
 
@@ -98,7 +98,11 @@
 
 .case-study--gallery {
   .case-study--gallery--first-step.cards {
-    grid-template-columns: repeat(1, 800px);
+    grid-template-columns: repeat(1, 900px);
+
+    &:first-child {
+      margin-left: unset;
+    }
   }
 
   .card {

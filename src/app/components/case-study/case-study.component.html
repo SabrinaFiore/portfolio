@@ -3,7 +3,6 @@
     <li class="case-study--item">
       <app-text-paragraph
         [title]="item.title"
-        [subtitle]="item.subtitle"
         [introduction]="item.introduction"
         [concept]="item.concept"
         [description]="item.description"
@@ -12,9 +11,6 @@
   </ng-template>
   <div class="case-study--cell">
     <div class="case-study--gallery">
-      <!-- <ng-template ngFor let-image [ngForOf]="item.image" let-i="image">
-        <img class="case-study--gallery-img" src="{{ image.url }}" alt="">
-      </ng-template> -->
       <ng-template ngFor let-card [ngForOf]="cards" let-i="index">
         <app-card
           [link]="card.link"

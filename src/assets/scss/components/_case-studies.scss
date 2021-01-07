@@ -24,7 +24,7 @@
   }
 
   &--cell {
-    margin: $unit-spacing 0 $unit-spacing*2 0;
+    margin: $unit-spacing 0 $unit-spacing*2;
     font-family: $typography-secondary-regular;
 
     @include breakpoints(break-medium) {
