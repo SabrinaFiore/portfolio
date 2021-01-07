@@ -1,5 +1,8 @@
 <main class="main">
-  <img class="main--photo" src="{{ src }}">
+  <img class="main--photo" *ngIf="src; else photoBackgroung" src="{{ src }}">
+  <ng-template #photoBackgroung>
+    <div class="main--photo-background"></div>
+  </ng-template>
   <div class="main--content">
     <div class="main--content-info">
       <h1 class="main--claim h1">{{ claim }}</h1>

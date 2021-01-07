@@ -4,6 +4,15 @@
       <div class="h5 carousel--subtitle">{{ subtitle }}</div>
     </div>
     <div class="carousel--items">
-      <app-card></app-card>
+      <ng-template ngFor let-item [ngForOf]="items" let-i="index">
+        <app-card
+          [link]="item.link"
+          [url]="item.url"
+          [number]="item.number"
+          [role]="item.role"
+          [headline]="item.headline"
+          [description]="item.description"
+        ></app-card>
+      </ng-template>
     </div>
 </section>

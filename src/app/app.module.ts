@@ -22,6 +22,9 @@ import { CardComponent } from './components/card/card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CaseStudyComponent } from './components/case-study/case-study.component';
+import { PanelComponent } from './components/panel/panel.component';
+import { TextParagraphComponent } from './components/text-paragraph/text-paragraph.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +43,8 @@ import { CaseStudyComponent } from './components/case-study/case-study.component
     PhotoGalleryComponent,
     FooterComponent,
     CaseStudyComponent,
+    PanelComponent,
+    TextParagraphComponent,
   ],
   imports: [
     AppRoutingModule,

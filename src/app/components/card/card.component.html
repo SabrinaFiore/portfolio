@@ -1,19 +1,20 @@
-<ng-template ngFor let-item [ngForOf]="items" let-i="index">
-  <div class="card">
-    <a href="{{ item.link }}" class="card--link" target="_blank">
-      <img src="{{ item.url }}" class="card--img">
-      <div div class="card--content l-container--big">
-        <div class="card--claim">
-          <div class="card--number">{{ item.number }}</div>
-          <div class="card--role h3">{{ item.role }}</div>
-          <div class="card--company-container">
-              <div class="card--company-info h5">
-                  <div class="card--company-name">{{ item.agency }}</div>
-                  <div class="card--employment-date">{{ item.years }}</div>
-              </div>
+<div class="card">
+  <a href="{{ link }}" class="card--link" target="_blank">
+    <img src="{{ url }}" class="card--img">
+    <div div class="card--content l-container--big">
+      <div class="card--claim">
+        <div class="card--number">{{ number }}</div>
+        <div class="card--role h3">{{ role }}</div>
+        <div class="card--container">
+          <div class="card--container-info h5">
+            <div class="card--container-headline">{{ headline }}</div>
+            <div class="card--container-description">{{ description }}</div>
           </div>
         </div>
       </div>
-    </a>
-  </div>
-</ng-template>
+    </div>
+  </a>
+</div>
+<div class="card--caption" *ngIf="cardDescription">
+  ciao ciao
+</div>

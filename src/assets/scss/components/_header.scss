@@ -1,8 +1,8 @@
 /* Header */
 
 .header {
-  background-color: $c-white-darker;
-  box-shadow: 0px 1px 5px $c-light-gray;
+  background-color: transparent;
+  // box-shadow: 0px 1px 5px $c-light-gray;
   padding: $unit-spacing--2 0;
   display: flex;
   position: fixed;
@@ -48,16 +48,16 @@
     }
 
     &--naming {
-        color: $c-dark-gray;
-        font-family: $typography-primary-regular;
-        font-weight: lighter;
-        font-size: $unit-spacing;
-        line-height: 22px;
-        padding-left: $unit-spacing--2;
+      color: $c-white-darker;
+      font-family: $typography-primary-regular;
+      font-weight: lighter;
+      font-size: $unit-spacing;
+      line-height: 22px;
+      padding-left: $unit-spacing--2;
 
-        @include breakpoints(break-x-medium) {
-          display: none;
-        }
+      @include breakpoints(break-x-medium) {
+        display: none;
+      }
     }
 
     & img {
@@ -66,7 +66,7 @@
   }
 
   &__items {
-    color: $c-dark-gray;
+    color: $c-white-darker;
     font-family: $typography-secondary-regular;
     font-size: $unit-spacing;
     padding-left: $unit-spacing;

@@ -4,9 +4,8 @@
   align-items: center;
   display: grid;
   grid-gap: calc(100px / 2);
-  grid-template-columns: repeat(10, 400px);
+  grid-template-columns: repeat(1, 400px);
   margin: 0 $unit-spacing*2;
-  overflow-x: scroll;
   scroll-snap-type: x proximity;
   white-space: unset;
 
@@ -75,7 +74,7 @@
 
   &--number,
   &--role,
-  &--company-container {
+  &--container {
     color: $c-white-darker--1;
     display: flex;
     justify-content: center;
@@ -91,8 +90,22 @@
     font-weight: 600;
   }
 
-  &--company-container {
+  &--container {
     font-family: $typography-secondary-regular;
     line-height: $unit-spacing-1;
+  }
+}
+
+.case-study--gallery {
+  .case-study--gallery--first-step.cards {
+    grid-template-columns: repeat(1, 800px);
+  }
+
+  .card {
+    &--link {
+      &::after {
+        background-image: linear-gradient(to bottom, #cbc8af40 0%, #00251dab 100%);
+      }
+    }
   }
 }

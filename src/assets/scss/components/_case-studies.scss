@@ -3,7 +3,7 @@
 .case-studies {
   background-color: $c-white--1;
 	margin-bottom: $unit-spacing*2;
-  padding: $unit-spacing*8 $unit-spacing*2 $unit-spacing*3;
+  padding: $unit-spacing*3;
 }
 
 .case-study {
@@ -16,8 +16,7 @@
   }
 
   &--cells {
-    align-items: flex-start;
-    display: flex;
+    display: block;
 
     @include breakpoints(break-medium) {
       display: block;
@@ -25,23 +24,11 @@
   }
 
   &--cell {
-    margin: $unit-spacing*2 0;
+    margin: $unit-spacing 0 $unit-spacing*2 0;
     font-family: $typography-secondary-regular;
 
     @include breakpoints(break-medium) {
       width: 100%;
-    }
-
-    &:first-child {
-      flex: 1;
-      padding: 0 $unit-spacing*2;
-    }
-
-    &:last-child {
-      height: 400px;
-      overflow: hidden;
-      overflow-y: auto;
-      width: 55%;
     }
   }
 
@@ -73,7 +60,6 @@
   &--gallery {
     display: flex;
     height: auto;
-    margin: 0 $unit-spacing*2;
     overflow-x: auto;
   }
 

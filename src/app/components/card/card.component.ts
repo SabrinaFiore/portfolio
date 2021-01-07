@@ -1,5 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
-import { CardService } from './card.service';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -9,9 +8,11 @@ import { CardService } from './card.service';
 })
 
 export class CardComponent {
-  items: any[];
-
-  constructor(private cardService: CardService) {
-    this.items = this.cardService.getImages();
-  }
+  @Input() link = 'string';
+  @Input() url = 'string';
+  @Input() number = 'string';
+  @Input() role = 'string';
+  @Input() headline = 'string';
+  @Input() description = 'string';
+  @Input() cardDescription : boolean = false;
 }

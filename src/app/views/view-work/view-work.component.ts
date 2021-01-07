@@ -4,10 +4,11 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-view-work',
   templateUrl: './view-work.component.html',
 })
+
 export class ViewWorkComponent implements OnInit {
-  mainCaseStudy = "../../../asset/images/main_case-study.jpg";
-  claimCaseStudy= "hola";
-  descriptionCaseStudy = "hola hola";
+  mainCaseStudy = "../../../assets/images/main_case-study-02.jpg";
+  claimCaseStudy= "My specializations (and passion) are Front-End-Creative Development and UI-Design.";
+  descriptionCaseStudy = "";
 
   fistCase = 'Portfolio';
   secondCase = 'Baj Aljazira - Banking';

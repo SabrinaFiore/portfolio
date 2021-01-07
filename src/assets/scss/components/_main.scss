@@ -5,11 +5,18 @@
   background-color: $c-white-darker;
 
   &--photo {
-    width: 100%;
+    filter: brightness(90%);
+    height: calc(100vh - 3rem);
     max-width: 2048px;
     object-fit: cover;
-    height: calc(100vh - 3rem);
-    filter: brightness(90%);
+    width: 100%;
+
+    &-background {
+      background-color: rgb(158, 144, 126);
+      height: calc(100vh - 3rem);
+      max-width: 2048px;
+      width: 100%;
+    }
   }
 
   &--content-info {
@@ -43,5 +50,17 @@
     @include breakpoints(break-medium) {
       padding: $unit-spacing;
     }
+  }
+}
+
+.main--photo-case-study {
+  .main--photo {
+    filter: brightness(80%);
+  }
+}
+
+.main--photo-gallery {
+  .main--photo {
+    background-color: antiquewhite;
   }
 }

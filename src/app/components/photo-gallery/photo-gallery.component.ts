@@ -41,7 +41,7 @@ export class PhotoGalleryComponent implements OnInit {
   initAnimations(): void {
     gsap.to(this.photoGallery.nativeElement.childNodes, {
       duration: 0.8,
-      y: 30,
+      y: 0,
     });
     gsap.from(this.photoGalleryBox.nativeElement.childNodes, {
       delay: 0.9,
@@ -55,7 +55,7 @@ export class PhotoGalleryComponent implements OnInit {
       scrollTrigger: {
         trigger: this.imageOne.nativeElement,
         toggleActions: 'play none reverse none',
-        start: 'end',
+        start: 'top center',
         markers: true,
       },
       x: -180,
