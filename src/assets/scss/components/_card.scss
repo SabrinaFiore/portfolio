@@ -96,14 +96,20 @@
   }
 
   &--captition-title {
-    font-weight: 500;
+    font-family: $typography-primary-regular;
+    font-weight: 600;
     padding-bottom: $unit-spacing--1;
+  }
+
+  &--captition-description {
+    font-family: $typography-secondary-regular;
+    line-height: $unit-spacing-2;
   }
 }
 
 .case-study--gallery {
   .case-study--gallery--first-step.cards {
-    grid-template-columns: repeat(1, 900px);
+    grid-template-columns: repeat(2, 600px);
 
     &:first-child {
       margin-left: unset;

@@ -15,7 +15,7 @@ export class CardService {
       url: 'assets/images/moonboard-03.png',
       link: '',
       captitionTitle: '01. Moodboard',
-      captitionDescription: "Beginning with a deep research about 'How could be the design od my Portfolio'. First af all was really usefull create a Moonboard with some inspiration about: color, lettering, layout, style.",
+      captitionDescription: "Beginning with a deep research about 'How could be the design of my Portfolio'. First of all was really usefull create a Moon-board (or inspiration board) digital collage with some inspiration about: color, lettering, layout, style. Having a mood board on display helps remind you the original goal of the project.",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export class CardService {
       url: 'assets/images/wireframe-01.png',
       link: '',
       captitionTitle: '02. Wireframing',
-      captitionDescription: "Drewing Wireframing and a the workflow of my web-page, this process It's very important to have a overview of the project and I changed my mind, so many time, but it's normal.. it's part of the process",
+      captitionDescription: "Wireframing is the main stage of UI/UX software design and an important one for visualizing what potential deliverables will look like. The design process have a significant role here, in order: put the requirements together, create (test) the structure of the project, design the navigation.",
     }
   ];
 
