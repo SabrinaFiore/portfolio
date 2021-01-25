@@ -50,10 +50,10 @@
     font-family: $typography-secondary-regular;
     line-height: 30px;
 
-    &-concept {
+    &-paragraphTitle {
       font-family: $typography-primary-regular;
       font-weight: 500;
-      padding: $unit-spacing 0;
+      padding: $unit-spacing-2 0 $unit-spacing;
     }
   }
 

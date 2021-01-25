@@ -109,6 +109,7 @@
 
 .case-study--gallery {
   .case-study--gallery--first-step.cards {
+    grid-gap: calc(100px / 2);
     grid-template-columns: repeat(2, 600px);
 
     &:first-child {
@@ -119,7 +120,8 @@
   .card {
     &--link {
       &::after {
-        background-image: linear-gradient(to bottom, #cbc8af40 0%, #00251dab 100%);
+        background-image: linear-gradient(to bottom, #cbc8af40 0%, #1b423a 100%);
+        opacity: unset;
       }
     }
   }

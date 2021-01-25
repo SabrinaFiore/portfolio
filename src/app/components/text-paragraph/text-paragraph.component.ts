@@ -9,7 +9,7 @@ export class TextParagraphComponent implements OnInit {
   @Input() subtitle: string;
   @Input() info: string;
   @Input() introduction: string;
-  @Input() concept: string;
+  @Input() paragraphTitle: string;
   @Input() description: string;
 
   constructor() { }

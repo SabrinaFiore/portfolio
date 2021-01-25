@@ -10,7 +10,7 @@ export class CardService {
       id: 1,
       number: '01',
       role: 'Research',
-      headline: 'Sabrina',
+      headline: '',
       description: '',
       url: 'assets/images/moonboard-03.png',
       link: '',
