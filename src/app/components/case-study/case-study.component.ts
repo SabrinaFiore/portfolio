@@ -13,7 +13,7 @@ export class CaseStudyComponent implements OnInit {
   introductionTitle = "Open-sourse creativity process";
   introductionCaption = "Welcome, I belive in a open-sourse creativity process and I would like to share with you the case study of my Portfolio, I had this project in my mind for a long time and I really enjoyed designing and developing it.";
   introductionSubtitle = "Concept";
-  introductionDescription = "Realizing something that could represent me through my design abilities using the photos that I took and highlighting my developing skills, was really hard finding a solution to put all this stuff together. In software development usually involves a pre-design stage, design research, and other main stages like: mood-board, sketching, wireframing, visualization. My design phase:";
+  introductionDescription = "Realizing something that could represent me through my design abilities using the photos that I took and highlighting my developing skills, was really hard finding a solution to put all this stuff together. In software development usually involves a pre-design stage, design research, and other main stages like: mood-board, sketching, wireframing, visualization. The design phase:";
 
   mainTitle = "Code for design and design for coding";
   mainIntroduction = "I believe that design and development work better together when our components, tools, and models are in sync. Keeping development and design concurrent means your product is easier to maintain, and update.";
