@@ -17,5 +17,4 @@ export class TextParagraphComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
