@@ -1,14 +1,12 @@
 <ul class="case-study">
-  <ng-template ngFor let-item [ngForOf]="items" let-i="index">
-    <li class="case-study--item">
-      <app-text-paragraph
-        [title]="item.title"
-        [introduction]="item.introduction"
-        [paragraphTitle]="item.paragraphTitle"
-        [description]="item.description"
-      ></app-text-paragraph>
-    </li>
-  </ng-template>
+  <li class="case-study--item">
+    <app-text-paragraph
+      [title]="introductionTitle"
+      [introduction]="introductionCaption"
+      [paragraphTitle]="introductionSubtitle"
+      [description]="introductionDescription"
+    ></app-text-paragraph>
+  </li>
   <div class="case-study--cell">
     <div class="case-study--gallery">
       <ng-template ngFor let-card [ngForOf]="cards" let-i="index">

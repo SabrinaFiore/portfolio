@@ -7,56 +7,6 @@
 }
 
 .case-study {
-  &--item {
-    &:nth-child(even) {
-      .case-study--cells {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-
-  &--cells {
-    display: block;
-
-    @include breakpoints(break-medium) {
-      display: block;
-    }
-  }
-
-  &--cell {
-    margin: $unit-spacing 0 $unit-spacing*2;
-    font-family: $typography-secondary-regular;
-
-    @include breakpoints(break-medium) {
-      width: 100%;
-    }
-  }
-
-  &--title,
-  &--subtitle {
-    color: $c-dark-gray;
-    font-family: $typography-primary-regular;
-    font-weight: 500;
-  }
-
-  &--subtitle-info {
-    color: $c-dark-gray;
-    font-family: $typography-secondary-regular;
-    padding-top: $unit-spacing--2;
-  }
-
-  &--case {
-    color: $c-dark-gray;
-    font-family: $typography-secondary-regular;
-    line-height: 30px;
-
-    &-paragraphTitle {
-      font-family: $typography-primary-regular;
-      font-weight: 500;
-      padding: $unit-spacing-2 0 $unit-spacing;
-    }
-  }
-
   &--gallery {
     display: flex;
     height: auto;

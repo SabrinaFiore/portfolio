@@ -4,6 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-text-paragraph',
   templateUrl: './text-paragraph.component.html',
 })
+
 export class TextParagraphComponent implements OnInit {
   @Input() title: string;
   @Input() subtitle: string;
