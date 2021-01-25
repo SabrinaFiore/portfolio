@@ -17,36 +17,27 @@
     }
   }
 
-  &--cell {
-    margin: $unit-spacing 0 $unit-spacing*2;
-    font-family: $typography-secondary-regular;
-
-    @include breakpoints(break-medium) {
-      width: 100%;
-    }
-  }
-
   &--title,
   &--subtitle {
     color: $c-dark-gray;
-    font-family: $typography-primary-regular;
-    font-weight: 500;
+    font-family: $typography-third-regular;
+    font-weight: 400;
   }
 
   &--subtitle-info {
     color: $c-dark-gray;
     font-family: $typography-secondary-regular;
-    padding-top: $unit-spacing--2;
+    padding-top: $unit-spacing;
   }
 
   &--case {
     color: $c-dark-gray;
     font-family: $typography-secondary-regular;
-    line-height: 30px;
+    line-height: 26px;
 
     &-paragraphTitle {
-      font-family: $typography-primary-regular;
-      font-weight: 500;
+      font-family: $typography-third-regular;
+      font-weight: 400;
       padding: $unit-spacing-2 0 $unit-spacing;
     }
   }

@@ -7,6 +7,15 @@
 }
 
 .case-study {
+  &--cell {
+    margin: $unit-spacing 0 $unit-spacing*2;
+    font-family: $typography-secondary-regular;
+
+    @include breakpoints(break-medium) {
+      width: 100%;
+    }
+  }
+
   &--gallery {
     display: flex;
     height: auto;

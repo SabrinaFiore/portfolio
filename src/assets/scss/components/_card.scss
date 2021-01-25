@@ -31,6 +31,7 @@
 
     &::after {
       bottom: 0;
+      border-radius: 5px;
       background-image: linear-gradient(to bottom, #95b5fd 0%, #980e00 100%);
       content: " ";
       display: inline-block;
@@ -49,6 +50,7 @@
   }
 
   &--img {
+    border-radius: 5px;
     display: inline-block;
     height: 500px;
     object-fit: cover;
@@ -103,14 +105,14 @@
 
   &--captition-description {
     font-family: $typography-secondary-regular;
-    line-height: $unit-spacing-2;
+    line-height: 26px;
   }
 }
 
 .case-study--gallery {
   .case-study--gallery--first-step.cards {
-    grid-gap: calc(100px / 2);
-    grid-template-columns: repeat(2, 600px);
+    grid-gap: calc(100px / 4);
+    grid-template-columns: repeat(2, 550px);
 
     &:first-child {
       margin-left: unset;
@@ -123,6 +125,11 @@
         background-image: linear-gradient(to bottom, #cbc8af40 0%, #1b423a 100%);
         opacity: unset;
       }
+    }
+
+    &--captition-title {
+      font-family: $typography-third-regular;
+      font-weight: 500;
     }
   }
 }

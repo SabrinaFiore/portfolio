@@ -15,7 +15,7 @@ export class CardService {
       url: 'assets/images/moonboard-03.png',
       link: '',
       captitionTitle: '01. Moodboard',
-      captitionDescription: "Beginning with a deep research about 'How could be the design of my Portfolio'. First of all was really usefull create a Moon-board (or inspiration board) digital collage with some inspiration about: color, lettering, layout, style. Having a mood board on display helps remind you the original goal of the project.",
+      captitionDescription: "Deep research about how could be the design of my Portfolio. Was really usefull create a Moon-board (or inspiration board) a digital collage with some inspiration about: color, lettering, layout, style. Having a mood board on display helps remind you the original goal of the project.",
     },
     {
       id: 2,
