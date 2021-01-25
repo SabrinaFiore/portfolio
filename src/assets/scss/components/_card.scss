@@ -94,6 +94,11 @@
     font-family: $typography-secondary-regular;
     line-height: $unit-spacing-1;
   }
+
+  &--captition-title {
+    font-weight: 500;
+    padding-bottom: $unit-spacing--1;
+  }
 }
 
 .case-study--gallery {
