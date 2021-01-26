@@ -39,27 +39,27 @@
     &:first-child {
       margin-left: unset;
     }
-  }
 
-  .card {
-    &--link {
-      &::after {
-        background-image: linear-gradient(to bottom, #cbc8af40 0%, #a2a18f 100%);
-        opacity: unset;
+    .card {
+      &--link {
+        &::after {
+          background-image: linear-gradient(to bottom, #cbc8af40 0%, #a2a18f 100%);
+          opacity: unset;
+        }
       }
-    }
 
-    &--captition-title {
-      font-family: $typography-third-regular;
-      font-weight: 500;
-    }
+      &--captition-title {
+        font-family: $typography-third-regular;
+        font-weight: 500;
+      }
 
-    &--number,
-    &--role,
-    &--container {
-      color: $c-darker-gray;
-      font-family: $typography-third-regular;
-      font-weight: 500;
+      &--number,
+      &--role,
+      &--container {
+        color: $c-darker-gray;
+        font-family: $typography-third-regular;
+        font-weight: 500;
+      }
     }
   }
 
@@ -70,32 +70,32 @@
     &:first-child {
       margin-left: unset;
     }
-  }
 
-  .card {
-    &--link {
-      &::after {
-        background-image: unset;
-        opacity: unset;
+    .card {
+      &--link {
+        &::after {
+          background-image: unset;
+          opacity: unset;
+        }
       }
-    }
 
-    &--img {
-      opacity: unset;
-      object-fit: fill;
-    }
+      &--img {
+        opacity: unset;
+        object-fit: fill;
+      }
 
-    &--captition-title {
-      font-family: $typography-third-regular;
-      font-weight: 500;
-    }
+      &--captition-title {
+        font-family: $typography-third-regular;
+        font-weight: 500;
+      }
 
-    &--number,
-    &--role,
-    &--container {
-      color: $c-darker-gray;
-      font-family: $typography-third-regular;
-      font-weight: 500;
+      &--number,
+      &--role,
+      &--container {
+        color: $c-darker-gray;
+        font-family: $typography-third-regular;
+        font-weight: 500;
+      }
     }
   }
 }
