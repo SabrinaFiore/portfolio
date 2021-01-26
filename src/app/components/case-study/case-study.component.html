@@ -11,11 +11,9 @@
     <div class="case-study--gallery">
       <ng-template ngFor let-card [ngForOf]="cards" let-i="index">
         <app-card
-          [link]="card.link"
           [url]="card.url"
           [number]="card.number"
           [role]="card.role"
-          [headline]="card.headline"
           [captitionTitle]="card.captitionTitle"
           [captitionDescription]="card.captitionDescription"
           cardDescription=true
@@ -42,16 +40,14 @@
       ></app-text-paragraph>
     </li>
   </div>
-  <ng-template ngFor let-item [ngForOf]="items" let-i="index">
-    <app-card
-      [link]="item.link"
-      [url]="item.url"
-      [number]="item.number"
-      [role]="item.role"
-      [headline]="item.headline"
-      [captitionTitle]="item.captitionTitle"
-      [captitionDescription]="item.captitionDescription"
-      class="case-study--gallery--second-step"
-    ></app-card>
-  </ng-template>
+  <div class="case-study--cell">
+    <div class="case-study--gallery">
+      <ng-template ngFor let-item [ngForOf]="items" let-i="index">
+        <app-card
+          [url]="item.url"
+          class="case-study--gallery--second-step"
+        ></app-card>
+      </ng-template>
+    </div>
+  </div>
 </ul>

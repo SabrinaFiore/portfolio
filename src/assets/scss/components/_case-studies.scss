@@ -62,12 +62,10 @@
       font-weight: 500;
     }
   }
-}
 
-.case-study--gallery--second-step {
-  .case-study--gallery--first-step.cards {
+  .case-study--gallery--second-step.cards {
     grid-gap: calc(100px / 4);
-    grid-template-columns: repeat(2, 550px);
+    grid-template-columns: repeat(1, 550px);
 
     &:first-child {
       margin-left: unset;
@@ -80,6 +78,11 @@
         background-image: unset;
         opacity: unset;
       }
+    }
+
+    &--img {
+      opacity: unset;
+      object-fit: fill;
     }
 
     &--captition-title {
