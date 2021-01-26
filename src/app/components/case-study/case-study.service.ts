@@ -27,11 +27,11 @@ export class CardService {
   items = [
     {
       id: 1,
-      url: 'assets/images/type-scale.png',
+      url: 'assets/images/code01.png',
     },
     {
       id: 2,
-      url: 'assets/images/type-scale-on-code.png',
+      url: 'assets/images/code02.png',
     }
   ];
 
