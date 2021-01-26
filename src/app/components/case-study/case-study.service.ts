@@ -30,7 +30,24 @@ export class CardService {
     }
   ];
 
+  items = [
+    {
+      id: 1,
+      number: '01',
+      role: 'Ciao',
+      headline: '',
+      description: '',
+      url: 'assets/images/moonboard-03.png',
+      link: '',
+      captitionTitle: 'Ciao',
+      captitionDescription: "ciao",
+    }
+  ]
+
   getImages(): any[] {
     return this.cards;
+  }
+  getItem(): any[] {
+    return this.items;
   }
 }

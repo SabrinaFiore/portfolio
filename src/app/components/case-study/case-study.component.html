@@ -24,12 +24,34 @@
       </ng-template>
     </div>
   </div>
+  <li class="case-study--item">
+    <app-text-paragraph
+      [title]="mainTitle"
+      [introduction]="mainIntroduction"
+      [paragraphTitle]="mainParagraphTitle"
+      [description]="mainDescription"
+    ></app-text-paragraph>
+  </li>
+  <div class="case-study--cell">
     <li class="case-study--item">
       <app-text-paragraph
-        [title]="mainTitle"
-        [introduction]="mainIntroduction"
-        [paragraphTitle]="mainParagraphTitle"
-        [description]="mainDescription"
+        [subtitle]="coreSubtitle"
+        [introduction]="coreIntroduction"
+        [paragraphTitle]="coreParagraphTitle"
+        [description]="coreDescription"
       ></app-text-paragraph>
     </li>
+  </div>
+  <ng-template ngFor let-item [ngForOf]="items" let-i="index">
+    <app-card
+      [link]="item.link"
+      [url]="item.url"
+      [number]="item.number"
+      [role]="item.role"
+      [headline]="item.headline"
+      [captitionTitle]="item.captitionTitle"
+      [captitionDescription]="item.captitionDescription"
+      class="case-study--gallery--second-step"
+    ></app-card>
+  </ng-template>
 </ul>
