@@ -83,19 +83,6 @@
         opacity: unset;
         object-fit: fill;
       }
-
-      &--captition-title {
-        font-family: $typography-third-regular;
-        font-weight: 500;
-      }
-
-      &--number,
-      &--role,
-      &--container {
-        color: $c-darker-gray;
-        font-family: $typography-third-regular;
-        font-weight: 500;
-      }
     }
   }
 }
