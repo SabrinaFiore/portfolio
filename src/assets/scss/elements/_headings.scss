@@ -14,6 +14,24 @@
 
 /* Set typoghraphy class */
 
+.h1 {
+  font-size: var(--h1);
+  font-family: $typography-secondary-regular;
+}
+
+.h2 {
+  font-size: var(--h2);
+  font-family: $typography-primary-regular;
+}
+
+.h3 {
+  font-size: var(--h3);
+}
+
+.h4 {
+  font-size: var(--h4);
+}
+
 .pharagraph {
   font-size: var(--font-size);
   font-family: $typography-secondary-regular;
@@ -22,23 +40,4 @@
 .link {
   font-size: var(--font-size);
   font-family: $typography-secondary-regular;
-}
-
-.h4 {
-  font-size: var(--h4);
-}
-
-.h3 {
-  font-size: var(--h3);
-}
-
-.h2 {
-  font-size: var(--h2);
-  font-family: $typography-primary-regular;
-}
-
-.h1 {
-  font-size: var(--h1);
-  font-family: $typography-secondary-regular;
-  // text-transform: uppercase;
 }
