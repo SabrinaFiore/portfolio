@@ -75,6 +75,7 @@
       &--link {
         &::after {
           background-image: unset;
+          height: unset;
           opacity: unset;
         }
       }
@@ -82,6 +83,7 @@
       &--img {
         opacity: unset;
         object-fit: contain;
+        height: unset;
       }
     }
   }
