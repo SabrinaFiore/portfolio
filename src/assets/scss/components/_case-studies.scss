@@ -43,8 +43,9 @@
     .card {
       &--link {
         &::after {
-          background-image: linear-gradient(to bottom, #cbc8af40 0%, #a2a18f 100%);
-          opacity: unset;
+          // background-image: linear-gradient(to bottom, #cbc8af40 0%, #a2a18f 100%);
+          background-image: unset;
+          opacity: 0.6;
         }
       }
 

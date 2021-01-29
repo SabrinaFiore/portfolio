@@ -1,3 +1,4 @@
+import { PlaygroundHeadlineCodeComponent } from './components/playground-headline-text/playground-headline-code.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -45,6 +46,7 @@ import { TextParagraphComponent } from './components/text-paragraph/text-paragra
     CaseStudyComponent,
     PanelComponent,
     TextParagraphComponent,
+    PlaygroundHeadlineCodeComponent,
   ],
   imports: [
     AppRoutingModule,

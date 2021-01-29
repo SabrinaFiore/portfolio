@@ -12,8 +12,6 @@
       <ng-template ngFor let-card [ngForOf]="cards" let-i="index">
         <app-card
           [url]="card.url"
-          [number]="card.number"
-          [role]="card.role"
           [captitionTitle]="card.captitionTitle"
           [captitionDescription]="card.captitionDescription"
           cardDescription=true
@@ -50,4 +48,5 @@
       </ng-template>
     </div>
   </div>
+  <app-playground-headline-code title="{{ blockCode }}"></app-playground-headline-code>
 </ul>

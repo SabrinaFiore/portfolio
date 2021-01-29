@@ -23,8 +23,11 @@ export class CaseStudyComponent implements OnInit {
 
   coreSubtitle = "Typography Matters";
   coreIntroduction = "Typography is arguably the essential part of a website. Designing a typography system means making decisions about: the typeface (font-family) you want to use, type (modular) scale, responsiveness of the text (size unit and breakpoints), spacing and vertical rhythm, colors (theming).";
-  coreParagraphTitle = " ";
-  coreDescription = " ";
+  coreParagraphTitle = "Colors";
+  coreDescription = "Incorporating brand colors will ensure you maintain your brand’s personality throughout your UI, too. I decided to use a neutral color palette, becouse I prioritize the legibility and using photos.";
+
+  blockCode = ":root { \n"+ " --font-size: 1rem; --ratio: 1.333; \n" + " --h4: calc(var(--font-size) * var(--ratio)); \n" +  " --h3: calc(var(--h4) * var(--ratio)); \n" + " --h2: calc(var(--h3) * var(--ratio)); \n" + " --h1: calc(var(--h2) * var(--ratio)); \n" + "}";
+
 
   constructor(private CardService: CardService) {
     this.cards = this.CardService.getImages();
@@ -32,5 +35,7 @@ export class CaseStudyComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.blockCode);
   }
+
 }
